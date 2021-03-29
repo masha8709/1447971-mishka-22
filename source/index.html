@@ -6,21 +6,21 @@
   <title>HTML Academy: Мишка</title>
 </head>
 
-<body class="page__body">
-  <header class="page-header">
-    <a href="page-header__logo">
+<body class="body">
+  <header class="header">
+    <a href="header__logo">
       <img src="img/header/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании «Мишка»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a>
               Каталог товаров
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a>
               Вязание на заказ
             </a>
@@ -95,7 +95,7 @@
     </div>
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
-      <ul class="about-us_list">
+      <ul class="about-us__list">
         <li class="about-us__item">Экологически чистые материалы</li>
         <li class="about-us__item">Скандинавский стиль по российской цене</li>
         <li class="about-us__item">Увеличивает лайки на фотографиях</li>
@@ -154,7 +154,7 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts_title">Контакты</h2>
+      <h2 class="contacts__title">Контакты</h2>
       <dl class="contacts__list">
         <div class="contacts__item">
           <dt class="contacts__contact">e-mail:</dt>
@@ -167,15 +167,14 @@
           <dd class="contacts__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
         </div>
       </dl>
-      <div class="contacts_map"></div>
+      <div class="contacts__map"></div>
       <button class="contacts__write-us button">Напишите нам</button>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="" class="social__link">
+      <ul class="footer__social__list">
+        <li class="footer__social__item">
+          <a href="" class="footer__social__link">
             <span class="visually-hidden">Instagram</span>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -184,8 +183,8 @@
             </svg>
           </a>
         </li>
-        <li class="social__item">
-          <a href="" class="social__link">
+        <li class="footer__social__item">
+          <a href="" class="footer__social__link">
             <span class="visually-hidden">Facebook</span>
             <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -194,8 +193,8 @@
             </svg>
           </a>
         </li>
-        <li class="social__item">
-          <a href="" class="social__link">
+        <li class="footer__social__item">
+          <a href="" class="footer__social__link">
             <span class="visually-hidden">Twitter</span>
             <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -205,10 +204,9 @@
           </a>
         </li>
       </ul>
-    </div>
     <div class="footer__copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <b class="footer__copyright__text">Разработано</b>
+      <a class="footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">логототип htmlacademy</span>
         <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
