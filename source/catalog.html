@@ -45,38 +45,38 @@
     <h1 class="visually-hidden">Каталог</h1>
     <section class="catalog">
       <h2 class="catalog__title">Каталог товаров</h2>
-      <div class="catalog__list">
-        <div class="catalog__item">
-          <img src="img/catalog/hare.jpg" alt="Вязаный заяц">
-          <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
-          <p class="catalog__description">Рост 30 см, вес 200 г</p>
-          <span class="catalog__price">1 200 руб.</span>
-          <button class="catalog__buy" aria-label="Добавить в корзину"></button>
-        </div>
-        <div class="catalog__item">
-          <img src="img/catalog/basket-wash.jpg" alt="Вязаная корзина для белья">
-          <h3 class="catalog__title">Корзинка для белья</h3>
-          <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-          <span class="catalog__price">690 руб.</span>
-          <button class="catalog__buy" aria-label="Добавить в корзину"></button>
-        </div>
-        <div class="catalog__item">
-          <img src="img/catalog/basket-toy.jpg" alt="Вязаная корзина для игрушек">
-          <h3 class="catalog__title">Большая корзинка для игрушек</h3>
-          <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-          <span class="catalog__price">1 500 руб.</span>
-          <button class="catalog__buy" aria-label="Добавить в корзину"></button>
-        </div>
-        <div class="catalog__item">
-          <h3 class="catalog__title">Процесс производства</h3>
-          <img class="catalog__video" src="img/catalog/video.jpg" alt="Видео прозводства товаров">
-          <button class="catalog__video-play" aria-label="Воспроизвести видео"></button>
-          <p class="catalog__description">
+      <ul class="catalog__list">
+        <li class="catalog-item">
+          <img class="catalog-item__article" src="img/catalog/hare.jpg" alt="Вязаный заяц">
+          <h3 class="catalog-item__heading">Зайчик-попрыгайчик</h3>
+          <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+          <span class="catalog-item__price">1 200 руб.</span>
+          <button class="catalog-item__add" aria-label="Добавить в корзину"></button>
+        </li>
+        <li class="catalog-item">
+          <img class="catalog-item__article" src="img/catalog/basket-wash.jpg" alt="Вязаная корзина для белья">
+          <h3 class="catalog-item__heading">Корзинка для белья</h3>
+          <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+          <span class="catalog-item__price">690 руб.</span>
+          <button class="catalog-item__add" aria-label="Добавить в корзину"></button>
+        </li>
+        <li class="catalog-item">
+          <img class="catalog-item__article" src="img/catalog/basket-toy.jpg" alt="Вязаная корзина для игрушек">
+          <h3 class="catalog-item__heading">Большая корзинка для игрушек</h3>
+          <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+          <span class="catalog-item__price">1 500 руб.</span>
+          <button class="catalog-item__add" aria-label="Добавить в корзину"></button>
+        </li>
+        <li class="catalog-item">
+          <h3 class="catalog-item__heading">Процесс производства</h3>
+          <img class="catalog-item__video" src="img/catalog/video.jpg" alt="Видео прозводства товаров">
+          <button class="catalog-item__video-play" aria-label="Воспроизвести видео"></button>
+          <p class="catalog-item__description">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <a href="#" class="catalog__buy button">Сделать заказ</a>
-        </div>
-      </div>
+          <a href="#" class="catalog-item__buy button">Сделать заказ</a>
+        </li>
+      </ul>
     </section>
   </main>
   <div class="buy-form">
