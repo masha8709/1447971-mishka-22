@@ -13,6 +13,6 @@
 
 .main-nav__link,
 .main-nav__search-link {
-  color: $main-txt;
   @include fonts(17px, 24px);
+  color: $main-txt;
 }
