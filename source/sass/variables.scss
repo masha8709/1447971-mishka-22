@@ -1,0 +1,10 @@
+$main-txt: #000000;
+$main-txt-wth-opacity: rgba(0, 0, 0, 0.2);
+$background: #ffffff;
+$main-decor: #63d1bb;
+$top-color: #444444;
+
+@mixin fonts($size,$height) {
+  font-size: $size;
+  line-height: $height;
+}
