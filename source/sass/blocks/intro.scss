@@ -6,18 +6,19 @@
 }
 
 .intro__title {
-  @include fonts (27px, 30px);
+  @include fonts(27px, 30px);
   margin-bottom: 120px;
   margin-top: 0;
 }
 
 .intro__list {
+  @include fonts(19px, 24px);
   color: $background;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  @include fonts (19px, 24px);
 }
+
 .intro__item:first-child {
   background-color: $main-decor;
 }

@@ -1,0 +1,5 @@
+.table {
+  @include fonts(15px, 20px);
+  outline: 2px solid $main-decor;
+  margin-bottom: 41px;
+}
