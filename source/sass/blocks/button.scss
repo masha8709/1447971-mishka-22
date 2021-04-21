@@ -1,0 +1,13 @@
+.button {
+  @include fonts(18px, 20px);
+  font-weight: 700;
+  color: $top-color;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  border: 2px solid $top-color;
+  width: 260px;
+  background-color: $background;
+  text-transform: uppercase;
+  display: block;
+}

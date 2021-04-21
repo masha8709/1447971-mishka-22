@@ -1,0 +1,12 @@
+.footer {
+  padding: 25px 30px 32px;
+  background-color: $back-for-footer;
+}
+
+.footer__social-list {
+  outline: 2px solid $main-decor;
+}
+
+.footer__copyright__text {
+  @include fonts(19px, 18px);
+}

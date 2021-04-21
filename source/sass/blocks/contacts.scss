@@ -1,0 +1,19 @@
+.contacts {
+  padding: 38px 30px 39px;
+}
+
+.contacts__title {
+  @include fonts(18px, 30px);
+  margin-bottom: 28px;
+}
+
+.contacts__item {
+  margin-bottom: 48px;
+}
+
+.contacts__contact,
+.contacts-link {
+  @include fonts(14px, 30px);
+  font-weight: 400;
+  color: $top-color;
+}

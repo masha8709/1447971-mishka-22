@@ -1,0 +1,31 @@
+.intro {
+  background-image: url("../img/intro/background-intro.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 73px 30px 0;
+}
+
+.intro__title {
+  @include fonts(27px, 30px);
+  margin-bottom: 120px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.intro__list {
+  @include fonts(19px, 24px);
+  color: $background;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.intro__item:first-child {
+  background-color: $main-decor;
+}
+
+.intro__item {
+  padding-top: 24px;
+  padding-bottom: 31px;
+  background-color: $back-decor;
+}

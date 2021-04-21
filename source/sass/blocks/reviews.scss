@@ -1,0 +1,29 @@
+.reviews {
+  padding: 8px 30px 45px;
+}
+
+.reviews__title {
+  margin-bottom: 15px;
+}
+
+.reviews__item {
+  margin-bottom: 32px;
+}
+
+.reviews__text {
+  @include fonts(15px, 30px);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.reviews__insta {
+  font-weight: normal;
+  display: block;
+  margin-top: 32px;
+}
+
+.reviews__toggles {
+  margin-top: 0;
+  margin-bottom: 38px;
+}

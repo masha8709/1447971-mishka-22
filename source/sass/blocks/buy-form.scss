@@ -1,0 +1,36 @@
+.buy-form {
+  padding: 29px 30px 46px;
+}
+
+.buy-form__title {
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.buy-form__size {
+  @include fonts(15px, 30px);
+  color: $top-color;
+  font-weight: 400;
+}
+
+.buy-form__list {
+  margin-top: 22px;
+  margin-bottom: 31px;
+  outline: 2px solid $main-decor;
+  list-style: none;
+  padding-left: 0;
+}
+
+.buy-form__item {
+  @include fonts(17px, 16px);
+  color: $top-color;
+  border: 2px solid $top-color;
+  text-align: center;
+  padding: 18px 22px;
+}
+
+.buy-form__add-to-cart {
+  color: $background;
+  background-color: $main-decor;
+  border: none;
+}

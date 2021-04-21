@@ -1,0 +1,17 @@
+.about-us {
+  padding: 24px 30px 50px;
+}
+
+.about-us__title {
+  margin-bottom: 83px;
+}
+
+.about-us__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.about-us__item:not(:last-child) {
+  margin-bottom: 83px;
+}

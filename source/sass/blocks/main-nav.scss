@@ -1,0 +1,18 @@
+.main-nav {
+  outline: 2px solid $main-decor;
+}
+
+.main-nav__item,
+.main-nav__search {
+  margin-bottom: 55px;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__link,
+.main-nav__search-link {
+  @include fonts(17px, 24px);
+  color: $main-txt;
+}
