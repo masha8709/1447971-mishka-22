@@ -52,16 +52,36 @@
 
 .full-name {
   margin-bottom: 29px;
+  margin-top: 9px;
 }
 
 .phone {
   margin-bottom: 5px;
 }
 
-.email {
+.form__tel {
+  margin-bottom: 35px;
+}
+
+.email,
+.form__mail {
   margin-bottom: 21px;
 }
 
 .add {
   margin-bottom: 23px;
+}
+
+.user-full-name {
+  outline: 2px solid $main-decor;
+  margin-bottom: 35px;
+}
+
+.form__writing {
+  margin-bottom: 17px;
+}
+
+.form__obligatory {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
