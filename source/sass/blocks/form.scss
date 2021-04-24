@@ -29,6 +29,7 @@
   @include fonts(17px, 16px);
   text-transform: uppercase;
   color: $main-decor;
+  position: relative;
 }
 
 .form__list {
@@ -84,4 +85,13 @@
 .form__obligatory {
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.form__heading::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  border-bottom: 1px solid $border-decor;
+  top: 8px;
+  left: 65px;
 }
