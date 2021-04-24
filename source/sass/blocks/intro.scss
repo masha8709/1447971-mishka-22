@@ -20,12 +20,12 @@
   padding-left: 0;
 }
 
-.intro__item:first-child {
-  background-color: $main-decor;
-}
-
 .intro__item {
   padding-top: 24px;
   padding-bottom: 31px;
   background-color: $back-decor;
+
+  &:first-child {
+    background-color: $main-decor;
+  }
 }
