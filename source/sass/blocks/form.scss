@@ -80,11 +80,16 @@
 
 .form__writing {
   margin-bottom: 17px;
+  resize: none;
+  border: 2px solid $main-txt;
 }
 
 .form__obligatory {
+  @include fonts(14px, 16px);
   margin-top: 0;
   margin-bottom: 30px;
+  font-weight: normal;
+  color: $top-color;
 }
 
 .form__heading::after {
