@@ -1,0 +1,67 @@
+.form {
+  padding: 0 30px 55px;
+}
+
+.form__title {
+  @include fonts(27px, 30px);
+  text-align: center;
+  background-color: $back-for-footer;
+  min-height: 180px;
+  padding-top: 74px;
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.form__txt {
+  @include fonts(13px, 24px);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $top-color;
+}
+
+.form-group {
+  border: none;
+  padding: 0;
+}
+
+.form__heading {
+  @include fonts(17px, 16px);
+  text-transform: uppercase;
+  color: $main-decor;
+}
+
+.form__list {
+  @include fonts(17px, 18px);
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.form__item {
+  margin-bottom: 24px;
+}
+
+.choose {
+  margin-bottom: 30px;
+}
+
+.color {
+  margin-bottom: 25px;
+}
+
+.full-name {
+  margin-bottom: 29px;
+}
+
+.phone {
+  margin-bottom: 5px;
+}
+
+.email {
+  margin-bottom: 21px;
+}
+
+.add {
+  margin-bottom: 23px;
+}
