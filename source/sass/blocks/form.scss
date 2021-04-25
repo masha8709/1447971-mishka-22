@@ -52,42 +52,46 @@
   margin-bottom: 24px;
 }
 
-.choose {
+.form__heading-type {
   margin-bottom: 30px;
 }
 
-.color {
+.form__heading-color {
   margin-bottom: 25px;
 }
 
-.full-name {
+.form__group-name {
+  outline: 2px solid $main-decor;
+  margin-bottom: 35px;
+}
+
+.form__full-name {
   margin-bottom: 29px;
   margin-top: 9px;
 }
 
-.phone {
-  margin-bottom: 5px;
+.form__data {
+  border: none;
+  border-bottom: 2px solid $main-txt;
+  padding-bottom: 17px;
 }
 
 .form__tel {
   margin-bottom: 35px;
+  margin-top: 5px;
 }
 
-.email,
 .form__mail {
-  margin-bottom: 21px;
+  margin-bottom: 35px;
+  margin-top: 21px;
 }
 
 .add {
   margin-bottom: 23px;
 }
 
-.user-full-name {
-  outline: 2px solid $main-decor;
-  margin-bottom: 35px;
-}
-
 .form__writing {
+  margin-top: 23px;
   margin-bottom: 17px;
   resize: none;
   border: 2px solid $main-txt;
@@ -99,10 +103,4 @@
   margin-bottom: 30px;
   font-weight: normal;
   color: $top-color;
-}
-
-.data {
-  border: none;
-  border-bottom: 2px solid $main-txt;
-  padding-bottom: 17px;
 }

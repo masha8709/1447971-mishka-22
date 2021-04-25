@@ -50,7 +50,7 @@
         свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru" method="get" class="form__field" target="_blank">
         <fieldset class="form__group">
-          <legend class="form__heading choose">Тип</legend>
+          <legend class="form__heading form__heading-type">Тип</legend>
           <ul class="form__list">
             <li class="form__item">
               <input class="form__radio visually-hidden" type="radio" name="choice" id="interior" value="interior" checked>
@@ -63,7 +63,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__heading color">Цвет</legend>
+          <legend class="form__heading form__heading-color">Цвет</legend>
           <ul class="form__list">
             <li class="form__item">
               <input class="form__color visually-hidden" type="checkbox" id="white" name="white" checked>
@@ -91,28 +91,28 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group user-full-name">
-          <legend class="form__heading full-name">ФИО</legend>
+        <fieldset class="form__group form__group-name">
+          <legend class="form__heading form__full-name">ФИО</legend>
           <label for="name">Имя:</label>
-          <input class="form__name data" type="text" id="name" placeholder="Введите Ваше имя*" name="user-name"
+          <input class="form__data" type="text" id="name" placeholder="Введите Ваше имя*" name="user-name"
             required>
           <label for="surname">Фамилия:</label>
-          <input class="form__surname data" type="text" id="surname" placeholder="Укажите фамилию*" name="user-surname"
+          <input class="form__data" type="text" id="surname" placeholder="Укажите фамилию*" name="user-surname"
             required>
           <label for="patronym">Отчество:</label>
-          <input class="form__patronym data" type="text" id="patronym" placeholder="Отчество, если желаете"
+          <input class="form__data" type="text" id="patronym" placeholder="Отчество, если желаете"
             name="patronym">
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__heading phone">Тел</legend>
-          <input class="form__tel data" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="user-phone" required>
+          <legend class="form__heading">Тел</legend>
+          <input class="form__tel form__data" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="user-phone" required>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__heading email">E-mail</legend>
-          <input class="form__mail data" type="email" placeholder="Ваш Email*" name="user-mail" required>
+          <legend class="form__heading">E-mail</legend>
+          <input class="form__mail form__data" type="email" placeholder="Ваш Email*" name="user-mail" required>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__heading add">Доп</legend>
+          <legend class="form__heading">Доп</legend>
           <textarea class="form__writing" name="comment-field" rows="8"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
