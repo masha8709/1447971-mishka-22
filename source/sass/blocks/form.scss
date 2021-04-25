@@ -1,0 +1,106 @@
+.form {
+  padding: 0 30px 55px;
+}
+
+.form__title {
+  @include fonts(27px, 30px);
+  text-align: center;
+  background-color: $back-for-footer;
+  min-height: 180px;
+  padding-top: 74px;
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.form__txt {
+  @include fonts(13px, 24px);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $top-color;
+}
+
+.form__group {
+  border: none;
+  padding: 0;
+}
+
+.form__heading {
+  @include fonts(17px, 16px);
+  text-transform: uppercase;
+  color: $main-decor;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    border-bottom: 1px solid $border-decor;
+    top: 8px;
+    left: 65px;
+  }
+}
+
+.form__list {
+  @include fonts(17px, 18px);
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.form__item {
+  margin-bottom: 24px;
+}
+
+.form__heading-type {
+  margin-bottom: 30px;
+}
+
+.form__heading-color {
+  margin-bottom: 25px;
+}
+
+.form__group-name {
+  outline: 2px solid $main-decor;
+  margin-bottom: 35px;
+}
+
+.form__full-name {
+  margin-bottom: 29px;
+  margin-top: 9px;
+}
+
+.form__data {
+  border: none;
+  border-bottom: 2px solid $main-txt;
+  padding-bottom: 17px;
+}
+
+.form__tel {
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+.form__mail {
+  margin-bottom: 35px;
+  margin-top: 21px;
+}
+
+.add {
+  margin-bottom: 23px;
+}
+
+.form__writing {
+  margin-top: 23px;
+  margin-bottom: 17px;
+  resize: none;
+  border: 2px solid $main-txt;
+}
+
+.form__obligatory {
+  @include fonts(14px, 16px);
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: normal;
+  color: $top-color;
+}
