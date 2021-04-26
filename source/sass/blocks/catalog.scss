@@ -21,6 +21,7 @@
 
 .catalog__item {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .catalog__article {
@@ -45,17 +46,23 @@
   @include fonts(15px, 24px);
 }
 
+.catalog__add-button {
+  position: absolute;
+  top: 325px;
+  left: 215px;
+  border: none;
+  background-color: transparent;
+}
+
 .catalog__video {
   margin-top: 24px;
   margin-bottom: 35px;
-  position: relative;
 }
 
 .catalog__video-play {
   position: absolute;
-  top: 1781px;
-  left: 107px;
+  top: 87px;
+  left: 75px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
