@@ -14,10 +14,8 @@
 
 .intro__list {
   @include fonts(19px, 24px);
+  @include reset-list;
   color: $background;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
 }
 
 .intro__item {

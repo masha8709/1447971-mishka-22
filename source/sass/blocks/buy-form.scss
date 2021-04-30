@@ -14,11 +14,10 @@
 }
 
 .buy-form__list {
+  @include reset-list;
   margin-top: 22px;
   margin-bottom: 31px;
   outline: 2px solid $main-decor;
-  list-style: none;
-  padding-left: 0;
 }
 
 .buy-form__item {
