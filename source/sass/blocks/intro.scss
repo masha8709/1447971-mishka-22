@@ -56,3 +56,29 @@
   top: -5px;
   right: -132px;
 }
+
+@media (min-width: $tablet-width) {
+  .intro {
+    padding: 155px 50px 0;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+      @include pseudo-el;
+      @include pos-pseudo-el(100%, 24px, 0);
+      background-image: url("../../img/svg/zigzag-line.svg");
+      bottom: 0;
+    }
+  }
+
+  .intro__title {
+    @include fonts(43px, 50px);
+    width: 100%;
+    padding: 0;
+    margin-bottom: 500px;
+  }
+
+  .intro__list {
+    display: flex;
+  }
+}
