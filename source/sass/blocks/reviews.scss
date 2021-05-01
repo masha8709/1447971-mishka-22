@@ -1,5 +1,13 @@
 .reviews {
   padding: 8px 30px 45px;
+  position: relative;
+
+  &::after {
+    @include pseudo-el;
+    @include pos-pseudo-el(100%, 6px, 0);
+    background-image: url("../../img/svg/wave-line.svg");
+    bottom: 0;
+  }
 }
 
 .reviews__title {
