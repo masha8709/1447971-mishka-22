@@ -9,6 +9,8 @@
 
 .contacts__item {
   margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 75px 1fr;
 }
 
 .contacts__contact,
