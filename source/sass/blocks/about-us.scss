@@ -18,51 +18,37 @@
   position: relative;
 
   &::before {
-    content: "";
-    position: absolute;
-    display: block;
+    @include pseudo-el;
     top: -50px;
   }
 
   &:first-child::before {
-    width: 33px;
-    height: 38px;
+    @include pos-pseudo-el(33px, 38px, 6px);
     background-image: url("../../img/svg/flower.svg");
-    left: 6px;
   }
 
   &:nth-child(2)::before {
-    width: 47px;
-    height: 27px;
+    @include pos-pseudo-el(47px, 27px, 0);
     background-image: url("../../img/svg/banknote.svg");
-    left: 0;
   }
 
   &:nth-child(3)::before {
-    width: 34px;
-    height: 27px;
+    @include pos-pseudo-el(34px, 27px, 6px);
     background-image: url("../../img/svg/like.svg");
-    left: 6px;
   }
 
   &:nth-child(4)::before {
-    width: 35px;
-    height: 34px;
+    @include pos-pseudo-el(35px, 34px, 0);
     background-image: url("../../img/svg/kneet.svg");
-    left: 0;
   }
 
   &:nth-child(5)::before {
-    width: 55px;
-    height: 23px;
+    @include pos-pseudo-el(55px, 23px, 0);
     background-image: url("../../img/svg/raket.svg");
-    left: 0;
   }
 
   &:nth-child(6)::before {
-    width: 33px;
-    height: 32px;
+    @include pos-pseudo-el(33px, 32px, 0);
     background-image: url("../../img/svg/present.svg");
-    left: 0;
   }
 }

@@ -6,9 +6,7 @@
   position: relative;
 
   &::after {
-    content: "";
-    display: block;
-    position: absolute;
+    @include pseudo-el;
     background-image: url("../../img/svg/wave-line.svg");
     bottom: 0;
     left: 0;
