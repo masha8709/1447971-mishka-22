@@ -7,7 +7,12 @@
 }
 
 .reviews__item {
+  margin: 0;
   margin-bottom: 32px;
+}
+
+.reviews__item-hide {
+  display: none;
 }
 
 .reviews__text {
@@ -20,7 +25,7 @@
 .reviews__insta {
   font-weight: normal;
   display: block;
-  margin-top: 32px;
+  margin-top: 10px;
 }
 
 .reviews__toggles {
