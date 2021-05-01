@@ -1,11 +1,10 @@
 .header {
   background-color: $background;
-  padding: 22px 0 27px;
-  display: flex;
-  flex-direction: column;
+  padding-top: 22px;
 }
 
 .header__logo {
+  display: block;
   height: 80px;
   text-align: center;
 }
