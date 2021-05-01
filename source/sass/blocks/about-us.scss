@@ -13,3 +13,56 @@
 .about-us__item:not(:last-child) {
   margin-bottom: 83px;
 }
+
+.about-us__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -50px;
+  }
+
+  &:first-child::before {
+    width: 33px;
+    height: 38px;
+    background-image: url("../../img/svg/flower.svg");
+    left: 6px;
+  }
+
+  &:nth-child(2)::before {
+    width: 47px;
+    height: 27px;
+    background-image: url("../../img/svg/banknote.svg");
+    left: 0;
+  }
+
+  &:nth-child(3)::before {
+    width: 34px;
+    height: 27px;
+    background-image: url("../../img/svg/like.svg");
+    left: 6px;
+  }
+
+  &:nth-child(4)::before {
+    width: 35px;
+    height: 34px;
+    background-image: url("../../img/svg/kneet.svg");
+    left: 0;
+  }
+
+  &:nth-child(5)::before {
+    width: 55px;
+    height: 23px;
+    background-image: url("../../img/svg/raket.svg");
+    left: 0;
+  }
+
+  &:nth-child(6)::before {
+    width: 33px;
+    height: 32px;
+    background-image: url("../../img/svg/present.svg");
+    left: 0;
+  }
+}

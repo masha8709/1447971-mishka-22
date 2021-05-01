@@ -1,4 +1,11 @@
 .header {
   background-color: $background;
-  padding: 22px 30px 27px;
+  padding: 22px 0 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  height: 80px;
+  text-align: center;
 }

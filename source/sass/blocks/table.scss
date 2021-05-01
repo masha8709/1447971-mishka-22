@@ -1,5 +1,10 @@
 .table {
   @include fonts(15px, 20px);
-  outline: 2px solid $main-decor;
-  margin-bottom: 41px;
+  margin-bottom: 30px;
+}
+
+.table__cell {
+  padding-bottom: 11px;
+  padding-top: 11px;
+  padding-right: 25px;
 }

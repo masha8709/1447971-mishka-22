@@ -2,7 +2,7 @@
   background-image: url("../img/intro/background-intro.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 73px 30px 0;
+  padding-top: 73px;
 }
 
 .intro__title {
@@ -10,12 +10,13 @@
   margin-bottom: 120px;
   margin-top: 0;
   text-align: center;
+  width: 290px;
+  padding-left: 30px;
 }
 
 .intro__list {
   @include fonts(19px, 24px);
   @include reset-list;
-  color: $background;
 }
 
 .intro__item {
@@ -26,4 +27,37 @@
   &:first-child {
     background-color: $main-decor;
   }
+}
+
+.intro__link {
+  color: $background;
+  display: block;
+  width: 130px;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.intro__link-interior::after {
+  width: 40px;
+  height: 62px;
+  background-image: url("../../img/svg/interior.svg");
+  top: -5px;
+  right: -122px;
+}
+
+.intro__link-toy::after {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/svg/toy.svg");
+  top: -5px;
+  right: -132px;
 }
