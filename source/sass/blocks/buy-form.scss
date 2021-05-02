@@ -1,5 +1,7 @@
 .buy-form {
+  display: none;
   padding: 29px 30px 46px;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .buy-form__title {
@@ -36,4 +38,17 @@
   color: $background;
   background-color: $main-decor;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .buy-form {
+    width: 566px;
+    margin: 0 auto;
+    padding: 38px 108px 46px;
+    box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  }
+
+  .buy-form__add-to-cart {
+    margin: 0 auto;
+  }
 }

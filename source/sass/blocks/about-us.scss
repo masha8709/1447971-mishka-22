@@ -53,3 +53,31 @@
     background-image: url("../../img/svg/present.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us__title {
+    @include fonts(43px, 50px);
+  }
+
+  .about-us__list {
+    display: grid;
+    grid-template-columns: 250px 100px 330px;
+    grid-template-rows: 118px 118px 118px;
+  }
+
+  .about-us__item {
+    @include fonts(20px, 22px);
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3) {
+      grid-column: 1/2;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      grid-column: 3/4;
+    }
+  }
+}

@@ -8,3 +8,9 @@
   height: 80px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    height: 90px;
+  }
+}

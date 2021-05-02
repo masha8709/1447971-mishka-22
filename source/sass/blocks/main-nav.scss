@@ -2,6 +2,10 @@
   @include reset-list;
 }
 
+.main-nav__delivery {
+  display: none;
+}
+
 .main-nav__link,
 .main-nav__search-link {
   @include fonts(17px, 24px);
@@ -10,23 +14,4 @@
   display: block;
   line-height: 80px;
   border-bottom: 1px solid #ececec;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 668px;
-    margin: 0 auto;
-  }
-
-  .button__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 1050px;
-  }
 }

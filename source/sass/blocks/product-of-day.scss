@@ -45,6 +45,10 @@
     margin-bottom: 50px;
   }
 
+  .product-of-day__heading {
+    @include fonts(43px, 50px);
+  }
+
   .product-of-day__title {
     width: 100px;
   }
@@ -52,7 +56,7 @@
   .product-of-day__info {
     display: grid;
     grid-template-columns: 167px 167px 167px 167px;
-    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-rows: auto auto auto auto;
   }
 
   .product-of-day__txt {

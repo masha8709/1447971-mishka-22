@@ -4,6 +4,10 @@
   background-color: $back-for-footer;
 }
 
+.footer__logo {
+  display: none;
+}
+
 .footer__social-list {
   @include reset-list;
   margin-bottom: 40px;
@@ -28,4 +32,41 @@
 
 .footer__copyright__text {
   @include fonts(19px, 18px);
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding-top: 5px;
+    padding-bottom: 66px;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__social-list {
+    margin: 0;
+
+    &::after {
+      border-bottom: none;
+    }
+  }
+
+  .footer__social-item {
+    margin-right: 40px;
+  }
+
+  .footer__copyright__link {
+    margin-left: 25px;
+  }
+
+  .footer__copyright__text {
+    display: block;
+    margin-top: 5px;
+  }
 }

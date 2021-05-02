@@ -19,3 +19,28 @@
   font-weight: 400;
   color: $top-color;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 245px 50px 39px;
+  }
+
+  .contacts__title {
+    @include fonts(43px, 50px);
+  }
+
+  .contacts__contact,
+  .contacts-link {
+    @include fonts(17px, 30px);
+  }
+
+  .contacts-wrp {
+    display: grid;
+    grid-template-columns: 350px 318px;
+  }
+
+  .contacts__item {
+    width: 320px;
+    grid-template-columns: 70px 1fr;
+  }
+}
