@@ -84,3 +84,39 @@
     margin-top: -53px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__list-more {
+    order: 4;
+    width: 355px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    margin-top: -86px;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    width: 400px;
+  }
+
+  .main-nav__search-txt {
+    margin-left: 72px;
+  }
+
+  .main-nav-wrp {
+    width: 400px;
+    margin-top: 0;
+  }
+
+  .main-nav__delivery {
+    margin-top: -46px;
+  }
+
+  .main-nav__cart-icon {
+    left: 872px;
+  }
+}
