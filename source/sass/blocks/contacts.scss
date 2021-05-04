@@ -20,9 +20,17 @@
   color: $top-color;
 }
 
+.contacts-link {
+  border-bottom: 1px solid $border-decor;
+}
+
+.contacts__write-us {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 245px 50px 39px;
+    padding: 68px 50px 73px;
   }
 
   .contacts__title {
