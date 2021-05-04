@@ -3,3 +3,9 @@
   top: 35px;
   right: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .button-toggle {
+    display: none;
+  }
+}

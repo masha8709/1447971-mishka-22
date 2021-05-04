@@ -11,7 +11,10 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    height: 90px;
-    overflow: visible;
+    padding: 22px 50px 20px;
+  }
+
+  .header__logo {
+    text-align: left;
   }
 }
