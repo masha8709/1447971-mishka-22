@@ -93,20 +93,4 @@
       order: 6;
     }
   }
-
-  /*.about-us__item {
-    @include fonts(20px, 22px);
-
-    &:first-child,
-    &:nth-child(2),
-    &:nth-child(3) {
-      grid-column: 1/2;
-    }
-
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      grid-column: 3/4;
-    }
-  }*/
 }

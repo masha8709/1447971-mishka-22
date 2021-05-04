@@ -39,6 +39,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product-of-day {
+    padding-bottom: 52px;
+  }
+
   .product-of-day-headings {
     display: flex;
     justify-content: space-between;
@@ -68,6 +72,9 @@
   .product-of-day__img {
     grid-column: 3/5;
     grid-row: 1/-1;
+    max-width: none;
+    width: 334px;
+    height: auto;
   }
 
   .product-of-day__buy {
