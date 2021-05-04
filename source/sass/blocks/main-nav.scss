@@ -15,3 +15,17 @@
   line-height: 80px;
   border-bottom: 1px solid #ececec;
 }
+
+.main-nav__search-icon,
+.main-nav__cart-icon {
+  position: absolute;
+  left: 30px;
+}
+
+.main-nav__search-icon {
+  top: 296px;
+}
+
+.main-nav__cart-icon {
+  top: 375px;
+}

@@ -12,5 +12,6 @@
 @media (min-width: $tablet-width) {
   .header {
     height: 90px;
+    overflow: visible;
   }
 }
