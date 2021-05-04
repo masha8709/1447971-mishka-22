@@ -94,3 +94,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us__title {
+    @include fonts(53px, 57px);
+  }
+
+  .about-us__title,
+  .about-us__list {
+    margin-left: 175px;
+  }
+}

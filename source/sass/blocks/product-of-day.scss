@@ -92,3 +92,18 @@
     height: 17px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-of-day {
+    padding-top: 54px;
+    padding-bottom: 73px;
+  }
+
+  .product-of-day__heading {
+    @include fonts(53px, 57px);
+  }
+
+  .product-of-day__img {
+    width: 525px;
+  }
+}

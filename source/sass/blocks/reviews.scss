@@ -83,3 +83,16 @@
     grid-row: 3/4;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 78px;
+    padding-bottom: 67px;
+    padding-left: 225px;
+  }
+
+  .reviews__title {
+    @include fonts(53px, 57px);
+    margin-bottom: 39px;
+  }
+}
