@@ -52,3 +52,27 @@
     grid-template-columns: 70px 1fr;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 71px;
+    padding-bottom: 105px;
+    padding-left: 225px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .contacts__title {
+    @include fonts(53px, 57px);
+    grid-column: 1/2;
+  }
+
+  .contacts-wrp {
+    display: block;
+    grid-column: 1/2;
+  }
+
+  .contacts__write-us {
+    grid-column: 1/2;
+  }
+}
