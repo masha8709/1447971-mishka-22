@@ -1,0 +1,47 @@
+.catalog-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.catalog-item__article {
+  margin-bottom: 28px;
+}
+
+.catalog-item__heading {
+  @include fonts(17px, 24px);
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.catalog-item__description {
+  @include fonts(13px, 24px);
+  color: $top-color;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 41px;
+}
+
+.catalog-item__price {
+  @include fonts(15px, 24px);
+}
+
+.catalog-item__add-button {
+  position: absolute;
+  top: 325px;
+  left: 215px;
+  border: none;
+  background-color: transparent;
+}
+
+.catalog-item__video {
+  margin-top: 24px;
+  margin-bottom: 35px;
+}
+
+.catalog-item__video-play {
+  position: absolute;
+  top: 87px;
+  left: 75px;
+  border: none;
+  background-color: transparent;
+}

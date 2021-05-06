@@ -1,18 +1,122 @@
-.main-nav {
-  outline: 2px solid $main-decor;
+.main-nav__list-more {
+  display: none;
 }
 
-.main-nav__item,
-.main-nav__search {
-  margin-bottom: 55px;
+.main-nav__list,
+.main-nav__list-more {
+  @include reset-list;
 }
 
-.main-nav__list {
-  list-style: none;
+.main-nav__delivery {
+  display: none;
 }
 
 .main-nav__link,
 .main-nav__search-link {
   @include fonts(17px, 24px);
   color: $main-txt;
+  padding: 0 30px 0 74px;
+  display: block;
+  line-height: 80px;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__search-icon,
+.main-nav__cart-icon {
+  position: absolute;
+  left: 30px;
+}
+
+.main-nav__search-icon {
+  top: 296px;
+}
+
+.main-nav__cart-icon {
+  top: 375px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__search-txt {
+    font-size: 0;
+    margin-left: 33px;
+    margin-top: 7px;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+  }
+
+  .main-nav-wrp {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: -86px;
+  }
+
+  .main-nav__link,
+  .main-nav__search-link {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .main-nav__search-icon {
+    position: static;
+  }
+
+  .main-nav__cart-icon {
+    top: 44px;
+    left: 486px;
+  }
+
+  .main-nav__delivery {
+    @include fonts(15px, 24px);
+    display: block;
+    color: $top-color;
+    font-weight: normal;
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: -53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list-more {
+    order: 4;
+    width: 355px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    margin-top: -86px;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    width: 400px;
+  }
+
+  .main-nav__search-txt {
+    margin-left: 72px;
+  }
+
+  .main-nav-wrp {
+    width: 400px;
+    margin-top: 0;
+  }
+
+  .main-nav__delivery {
+    margin-top: -46px;
+  }
+
+  .main-nav__cart-icon {
+    left: 872px;
+  }
 }

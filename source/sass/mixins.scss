@@ -2,3 +2,21 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin pseudo-el {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+@mixin pos-pseudo-el($width, $height, $left) {
+  width: $width;
+  height: $height;
+  left: $left;
+}

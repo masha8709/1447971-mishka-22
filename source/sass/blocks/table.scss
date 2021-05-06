@@ -1,5 +1,24 @@
 .table {
   @include fonts(15px, 20px);
-  outline: 2px solid $main-decor;
-  margin-bottom: 41px;
+  margin-bottom: 30px;
+}
+
+.table__cell {
+  padding-bottom: 11px;
+  padding-top: 11px;
+  padding-right: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .table {
+    width: 230px;
+    grid-column: 1/3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table {
+    grid-column: 2/2;
+    grid-row: 3/4;
+  }
 }
