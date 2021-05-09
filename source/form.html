@@ -46,79 +46,107 @@
   <main class="main">
     <h1 class="visually-hidden">Форма заказа</h1>
     <section class="form">
-      <h2 class="form__title">Вязание на заказ</h2>
-      <p class="form__txt">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
-        свяжемся с вами, чтобы уточнить детали.</p>
+      <h2 class="form__title container">Вязание на заказ</h2>
+      <p class="form__txt container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru" method="get" class="form__field" target="_blank">
-        <fieldset class="form__group">
-          <legend class="form__heading form__heading-type">Тип</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__radio visually-hidden" type="radio" name="choice" id="interior" value="interior" checked>
-              <label for="interior">Аксессуар для интерьера</label>
-            </li>
-            <li class="form__item">
-              <input class="form__radio visually-hidden" type="radio" name="choice" id="toy" value="toy">
-              <label for="toy">Детская игрушка</label>
-            </li>
-          </ul>
+        <fieldset class="form__group form__group-type">
+          <legend class="form__heading-screen-reader">Тип</legend>
+          <div class="form__group-wrapper container">
+            <div class="form__heading form__heading-type" aria-hidden="true">Тип</div>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__radio visually-hidden" type="radio" name="choice" id="interior" value="interior"
+                  checked>
+                <label for="interior">Аксессуар для интерьера</label>
+              </li>
+              <li class="form__item">
+                <input class="form__radio visually-hidden" type="radio" name="choice" id="toy" value="toy">
+                <label for="toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__heading form__heading-color">Цвет</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__color visually-hidden" type="checkbox" id="white" name="white" checked>
-              <label for="white">Белый</label>
-            </li>
-            <li class="form__item">
-              <input class="form__color visually-hidden" type="checkbox" id="grey" name="grey" checked>
-              <label for="grey">Серый</label>
-            </li>
-            <li class="form__item">
-              <input class="form__color visually-hidden" type="checkbox" name="tiffani" id="tiffani">
-              <label for="tiffani">«Тиффани»</label>
-            </li>
-            <li class="form__item">
-              <input class="form__color visually-hidden" type="checkbox" name="black" id="black">
-              <label for="black">Черный</label>
-            </li>
-            <li class="form__item">
-              <input class="form__color visually-hidden" type="checkbox" name="pink" id="pink">
-              <label for="pink">Розовый</label>
-            </li>
-            <li class="form__item">
-              <input class="form__color visually-hidden" type="checkbox" name="orange" id="orange">
-              <label for="orange">Оранжевый</label>
-            </li>
-          </ul>
+        <fieldset class="form__group form__group-color">
+          <legend class="form__heading-screen-reader">Цвет</legend>
+          <div class="form__group-wrapper form__group-wrapper-color container">
+            <div class="form__heading form__heading-color" aria-hidden="true">Цвет</div>
+            <ul class="form__list form__list-color">
+              <li class="form__item">
+                <input class="form__color visually-hidden" type="checkbox" id="white" name="white" checked>
+                <label for="white">Белый</label>
+              </li>
+              <li class="form__item">
+                <input class="form__color visually-hidden" type="checkbox" id="grey" name="grey" checked>
+                <label for="grey">Серый</label>
+              </li>
+              <li class="form__item">
+                <input class="form__color visually-hidden" type="checkbox" name="tiffani" id="tiffani">
+                <label for="tiffani">«Тиффани»</label>
+              </li>
+              <li class="form__item">
+                <input class="form__color visually-hidden" type="checkbox" name="black" id="black">
+                <label for="black">Черный</label>
+              </li>
+              <li class="form__item">
+                <input class="form__color visually-hidden" type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+              <li class="form__item">
+                <input class="form__color visually-hidden" type="checkbox" name="orange" id="orange">
+                <label for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="form__group form__group-name">
-          <legend class="form__heading form__full-name">ФИО</legend>
-          <label for="name">Имя:</label>
-          <input class="form__data" type="text" id="name" placeholder="Введите Ваше имя*" name="user-name"
-            required>
-          <label for="surname">Фамилия:</label>
-          <input class="form__data" type="text" id="surname" placeholder="Укажите фамилию*" name="user-surname"
-            required>
-          <label for="patronym">Отчество:</label>
-          <input class="form__data" type="text" id="patronym" placeholder="Отчество, если желаете"
-            name="patronym">
+          <legend class="form__heading-screen-reader">ФИО</legend>
+          <div class="form__group-wrapper form__group-wrapper-name container">
+            <div class="form__heading form__full-name" aria-hidden="true">ФИО</div>
+            <ul class="form__list form__list-name">
+              <li class="form__item">
+                <label class="form__data-name" for="name">Имя:</label>
+                <input class="form__data" type="text" id="name" placeholder="Введите Ваше имя*" name="user-name"
+                  required>
+              </li>
+              <li class="form__item">
+                <label class="form__data-name" for="surname">Фамилия:</label>
+                <input class="form__data" type="text" id="surname" placeholder="Укажите фамилию*" name="user-surname"
+                  required>
+              </li>
+              <li class="form__item">
+                <label class="form__data-name" for="patronym">Отчество:</label>
+                <input class="form__data" type="text" id="patronym" placeholder="Отчество, если желаете"
+                  name="patronym">
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__heading">Тел</legend>
-          <input class="form__tel form__data" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="user-phone" required>
+        <fieldset class="form__group form__group-contacts form__group-tel">
+          <legend class="form__heading-screen-reader">Тел</legend>
+          <div class="form__group-wrapper container">
+            <div class="form__heading" aria-hidden="true">Тел</div>
+            <input class="form__tel form__data" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="user-phone" required>
+          </div>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__heading">E-mail</legend>
-          <input class="form__mail form__data" type="email" placeholder="Ваш Email*" name="user-mail" required>
+        <fieldset class="form__group form__group-contacts form__group-mail">
+          <legend class="form__heading-screen-reader">E-mail</legend>
+          <div class="form__group-wrapper form__group-wrapper-contacts container">
+            <div class="form__heading" aria-hidden="true">E-mail</div>
+            <input class="form__mail form__data" type="email" placeholder="Ваш Email*" name="user-mail" required>
+          </div>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__heading">Доп</legend>
-          <textarea class="form__writing" name="comment-field" rows="8"
-            placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <fieldset class="form__group form__group-add">
+          <legend class="form__heading-screen-reader">Доп</legend>
+          <div class="form__group-wrapper container">
+            <div class="form__heading" aria-hidden="true">Доп</div>
+            <textarea class="form__writing" name="comment-field" rows="8"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </fieldset>
-        <p class="form__obligatory">*Поля обязательны для заполнения</p>
-        <button type="submit" class="form__send button">Отправить заказ</button>
+        <div class="form-wrp-btn container">
+          <p class="form__obligatory">*Поля обязательны для заполнения</p>
+          <button type="submit" class="form__send button">Отправить заказ</button>
+        </div>
       </form>
     </section>
   </main>
