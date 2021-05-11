@@ -1,5 +1,6 @@
 .catalog {
-  padding: 0 30px 28px;
+  padding-top: 0;
+  padding-bottom: 28px;
 }
 
 .catalog__title {
@@ -14,5 +15,25 @@
 
 .catalog__list {
   @include reset-list;
-  outline: 2px solid $main-decor;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-bottom: 0;
+  }
+
+  .catalog__title {
+    @include fonts(43px, 50px);
+    min-height: 216px;
+    margin-bottom: 67px;
+    padding-top: 100px;
+    position: relative;
+
+    &::after {
+      @include pseudo-el;
+      @include pos-pseudo-el(100%, 24px, 0);
+      background-image: url("../../img/svg/zigzag-line.svg");
+      bottom: -14px;
+    }
+  }
 }

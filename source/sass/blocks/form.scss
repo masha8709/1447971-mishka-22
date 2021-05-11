@@ -3,12 +3,6 @@
   padding-bottom: 55px;
 }
 
-.form__heading-screen-reader {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .form__title {
   @include fonts(27px, 30px);
   text-align: center;
