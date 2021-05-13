@@ -7,7 +7,7 @@
   @include reset-list;
 }
 
-.main-nav__delivery {
+.header__delivery-txt {
   display: none;
 }
 
@@ -74,7 +74,7 @@
     left: 486px;
   }
 
-  .main-nav__delivery {
+  .header__delivery-txt {
     @include fonts(15px, 24px);
     display: block;
     color: $top-color;
@@ -82,10 +82,6 @@
     text-align: right;
     margin-bottom: 0;
     margin-top: -53px;
-  }
-
-  .main-nav__delivery-txt {
-    margin-top: 0;
   }
 }
 
@@ -116,7 +112,7 @@
     margin-top: 0;
   }
 
-  .main-nav__delivery {
+  .header__delivery-txt {
     margin-top: -46px;
   }
 
