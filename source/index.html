@@ -13,8 +13,9 @@
     <a class="header__logo">
       <img src="img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании «Мишка»">
     </a>
-    <button class="button-toggle"><span class="visually-hidden">Открыть меню</span></button>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="catalog.html" class="main-nav__link">
@@ -39,22 +40,23 @@
             </a>
           </li>
         </ul>
-      <div class="main-nav-wrp">
-        <div class="main-nav__search">
-          <a href="#" class="main-nav__search-link main-nav__search-txt">
-            <img class="main-nav__search-icon" src="img/svg/search.svg" alt="Иконка поиска">
-            Поиск по сайту
-          </a>
-        </div>
-        <div class="main-nav__cart">
-          <a href="#" class="main-nav__search-link">
-            <img class="main-nav__cart-icon" src="img/svg/cart.svg" alt="Ссылка на корзину">
-            Корзина: пока пуста
-          </a>
+        <div class="main-nav-wrp">
+          <div class="main-nav__search">
+            <a href="#" class="main-nav__search-link main-nav__search-txt">
+              <img class="main-nav__search-icon" src="img/svg/search.svg" alt="Иконка поиска">
+              Поиск по сайту
+            </a>
+          </div>
+          <div class="main-nav__cart">
+            <a href="#" class="main-nav__search-link">
+              <img class="main-nav__cart-icon" src="img/svg/cart.svg" alt="Ссылка на корзину">
+              Корзина: пока пуста
+            </a>
+          </div>
         </div>
       </div>
     </nav>
-      <p class="header__delivery-txt">Бесплатная доставка по России</p>
+    <p class="header__delivery-txt">Бесплатная доставка по России</p>
   </header>
   <main class="main">
     <h1 class="visually-hidden">Предметы интерьера ручной работы</h1>
@@ -109,39 +111,39 @@
       </ul>
     </section>
     <section class="reviews">
-        <h3 class="reviews__title title">Отзывы</h3>
-          <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Анастасия Красильникова</cite>
-              <span class="reviews__insta">@misssssiskras</span>
-            </div>
-          </blockquote>
-          <blockquote class="reviews__item reviews__item-hide">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
-                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Екатерина Красильникова</cite>
-              <span class="reviews__insta">@misssssiskras</span>
-            </div>
-          </blockquote>
-          <blockquote class="reviews__item reviews__item-hide">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
-                такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
-                Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Елена Красильникова</cite>
-              <span class="reviews__insta">@misssssiskras</span>
-            </div>
-          </blockquote>
-        <div class="reviews__toggles">
-          <button class="slider__toggle" type="button"> <span class="visually-hidden">Назад</span></button>
-          <button class="slider__toggle" type="button"> <span class="visually-hidden">Вперёд</span></button>
+      <h3 class="reviews__title title">Отзывы</h3>
+      <blockquote class="reviews__item slider__item">
+        <div class="reviews__author-info">
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__author-name">Анастасия Красильникова</cite>
+          <span class="reviews__insta">@misssssiskras</span>
         </div>
-        <button class="reviews__button button">Написать</button>
+      </blockquote>
+      <blockquote class="reviews__item reviews__item-hide">
+        <div class="reviews__author-info">
+          <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+            количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+            и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__author-name">Екатерина Красильникова</cite>
+          <span class="reviews__insta">@misssssiskras</span>
+        </div>
+      </blockquote>
+      <blockquote class="reviews__item reviews__item-hide">
+        <div class="reviews__author-info">
+          <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+            такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
+            Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__author-name">Елена Красильникова</cite>
+          <span class="reviews__insta">@misssssiskras</span>
+        </div>
+      </blockquote>
+      <div class="reviews__toggles">
+        <button class="slider__toggle" type="button"> <span class="visually-hidden">Назад</span></button>
+        <button class="slider__toggle" type="button"> <span class="visually-hidden">Вперёд</span></button>
+      </div>
+      <button class="reviews__button button">Написать</button>
     </section>
     <section class="contacts">
       <h3 class="contacts__title title">Контакты</h3>
