@@ -80,6 +80,14 @@
   border-radius: 50%;
 }
 
+.form__radio:hover + label::before {
+  border-color: $border-decor;
+}
+
+.form__radio:active + label::before {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 .form__radio:checked + label::after {
   content: "";
   position: absolute;
@@ -123,6 +131,14 @@
   width: 38px;
   height: 38px;
   border: 2px solid $top-color;
+}
+
+.form__color:hover + label::before {
+  border-color: $border-decor;
+}
+
+.form__color:active + label::before {
+  border-color: rgba($color: #000000, $alpha: 0.3);
 }
 
 .form__color:checked + label::after {
