@@ -29,6 +29,14 @@
   margin-top: 0;
   margin-bottom: 6px;
   text-align: center;
+
+  &:hover {
+    color: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
 }
 
 .catalog-item__description {
