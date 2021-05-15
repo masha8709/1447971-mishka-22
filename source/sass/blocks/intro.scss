@@ -82,3 +82,10 @@
     display: flex;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .intro__link-interior::after,
+  .intro__link-toy::after {
+    right: -262px;
+  }
+}
