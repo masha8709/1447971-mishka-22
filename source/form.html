@@ -10,53 +10,53 @@
 
 <body class="body">
   <header class="header">
-    <a href="index.html" class="header__logo">
+    <a class="header__logo" href="./index.html">
       <img src="img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании «Мишка»">
     </a>
-    <button class="button-toggle"><span class="visually-hidden">Открыть меню</span></button>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="catalog.html" class="main-nav__link">
-            Каталог товаров
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">
-            Вязание на заказ
-          </a>
-        </li>
-      </ul>
-      <ul class="main-nav__list-more">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">
-            Новые поступления
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">
-            Распродажа
-          </a>
-        </li>
-      </ul>
-      <div class="main-nav-wrp">
-        <div class="main-nav__search">
-          <a href="#" class="main-nav__search-link main-nav__search-txt">
-            <img class="main-nav__search-icon" src="img/svg/search.svg" alt="Иконка поиска">
-            Поиск по сайту
-          </a>
-        </div>
-        <div class="main-nav__cart">
-          <a href="#" class="main-nav__search-link">
-            <img class="main-nav__cart-icon" src="img/svg/cart.svg" alt="Ссылка на корзину">
-            Корзина: пока пуста
-          </a>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list-more">
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">
+              Новые поступления
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav-wrp">
+          <div class="main-nav__search">
+            <a href="#" class="main-nav__search-link main-nav__search-txt">
+              <img class="main-nav__search-icon" src="img/svg/search.svg" alt="Иконка поиска">
+              Поиск по сайту
+            </a>
+          </div>
+          <div class="main-nav__cart">
+            <a href="#" class="main-nav__search-link">
+              <img class="main-nav__cart-icon" src="img/svg/cart.svg" alt="Ссылка на корзину">
+              Корзина: пока пуста
+            </a>
+          </div>
         </div>
       </div>
     </nav>
-    <div class="main-nav__delivery">
-      <p class="main-nav__delivery-txt">Бесплатная доставка по России</p>
-    </div>
+    <p class="header__delivery-txt">Бесплатная доставка по России</p>
   </header>
   <main class="main">
     <h1 class="visually-hidden">Форма заказа</h1>
@@ -68,13 +68,13 @@
           <legend class="visually-hidden">Тип</legend>
           <div class="form__group-wrapper container">
             <div class="form__heading form__heading-type" aria-hidden="true">Тип</div>
-            <ul class="form__list">
-              <li class="form__item">
+            <ul class="form__list form__list-choice">
+              <li class="form__item form__item-choice">
                 <input class="form__radio visually-hidden" type="radio" name="choice" id="interior" value="interior"
                   checked>
                 <label for="interior">Аксессуар для интерьера</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-choice">
                 <input class="form__radio visually-hidden" type="radio" name="choice" id="toy" value="toy">
                 <label for="toy">Детская игрушка</label>
               </li>
@@ -86,27 +86,27 @@
           <div class="form__group-wrapper form__group-wrapper-color container">
             <div class="form__heading form__heading-color" aria-hidden="true">Цвет</div>
             <ul class="form__list form__list-color">
-              <li class="form__item">
+              <li class="form__item form__item-color">
                 <input class="form__color visually-hidden" type="checkbox" id="white" name="white" checked>
                 <label for="white">Белый</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-color">
                 <input class="form__color visually-hidden" type="checkbox" id="grey" name="grey" checked>
                 <label for="grey">Серый</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-color">
                 <input class="form__color visually-hidden" type="checkbox" name="tiffani" id="tiffani">
                 <label for="tiffani">«Тиффани»</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-color">
                 <input class="form__color visually-hidden" type="checkbox" name="black" id="black">
                 <label for="black">Черный</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-color">
                 <input class="form__color visually-hidden" type="checkbox" name="pink" id="pink">
                 <label for="pink">Розовый</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-color">
                 <input class="form__color visually-hidden" type="checkbox" name="orange" id="orange">
                 <label for="orange">Оранжевый</label>
               </li>
@@ -118,17 +118,17 @@
           <div class="form__group-wrapper form__group-wrapper-name container">
             <div class="form__heading form__full-name" aria-hidden="true">ФИО</div>
             <ul class="form__list form__list-name">
-              <li class="form__item">
+              <li class="form__item form__item-name">
                 <label class="form__data-name" for="name">Имя:</label>
                 <input class="form__data" type="text" id="name" placeholder="Введите Ваше имя*" name="user-name"
                   required>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-name">
                 <label class="form__data-name" for="surname">Фамилия:</label>
                 <input class="form__data" type="text" id="surname" placeholder="Укажите фамилию*" name="user-surname"
                   required>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-name">
                 <label class="form__data-name" for="patronym">Отчество:</label>
                 <input class="form__data" type="text" id="patronym" placeholder="Отчество, если желаете"
                   name="patronym">
@@ -154,7 +154,7 @@
           <legend class="visually-hidden">Доп</legend>
           <div class="form__group-wrapper container">
             <div class="form__heading" aria-hidden="true">Доп</div>
-            <textarea class="form__writing" name="comment-field" rows="8"
+            <textarea class="form__writing" name="comment-field" rows="6"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
@@ -195,6 +195,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

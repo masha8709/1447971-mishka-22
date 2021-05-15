@@ -2,7 +2,7 @@
   background-image: url("../img/intro/background-intro.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  padding-top: 73px;
+  padding-top: 71px;
 }
 
 .intro__title {
@@ -80,5 +80,12 @@
 
   .intro__list {
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__link-interior::after,
+  .intro__link-toy::after {
+    right: -262px;
   }
 }
