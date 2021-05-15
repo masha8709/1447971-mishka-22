@@ -1,5 +1,5 @@
 .product-of-day {
-  padding-top: 24px;
+  padding-top: 30px;
   padding-bottom: 31px;
   background-color: $background;
   color: $top-color;
@@ -10,7 +10,7 @@
     @include pseudo-el;
     @include pos-pseudo-el(100%, 6px, 0);
     background-image: url("../../img/svg/wave-line.svg");
-    bottom: 0;
+    bottom: -10px;
   }
 }
 
@@ -27,13 +27,13 @@
 .product-of-day__txt {
   @include fonts(15px, 24px);
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .product-of-day__price {
   @include fonts(17px, 24px);
   margin-top: 26px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-weight: bold;
   text-align: center;
 }

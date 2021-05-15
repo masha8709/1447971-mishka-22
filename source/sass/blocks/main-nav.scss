@@ -83,22 +83,22 @@
   color: $main-txt;
   padding: 0 30px 0 74px;
   display: block;
-  line-height: 80px;
+  line-height: 78px;
   border-bottom: 1px solid #ececec;
 }
 
 .main-nav__search-icon,
 .main-nav__cart-icon {
   position: absolute;
-  left: 30px;
+  left: 31px;
 }
 
 .main-nav__search-icon {
-  top: 296px;
+  top: 270px;
 }
 
 .main-nav__cart-icon {
-  top: 375px;
+  top: 346px;
 }
 
 @media (min-width: $tablet-width) {
@@ -108,7 +108,7 @@
 
   .main-nav__search-txt {
     font-size: 0;
-    margin-left: 33px;
+    margin-left: 24px;
     margin-top: 7px;
   }
 
@@ -140,7 +140,7 @@
   }
 
   .main-nav__cart-icon {
-    top: 44px;
+    top: 35px;
     left: 486px;
   }
 
