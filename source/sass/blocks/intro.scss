@@ -80,11 +80,30 @@
     @include fonts(43px, 50px);
     width: 100%;
     padding: 0;
-    margin-bottom: 387px;
+    margin-bottom: 372px;
   }
 
   .intro__list {
     display: flex;
+  }
+
+  .intro__item {
+    padding-top: 26px;
+    padding-left: 36px;
+  }
+
+  .intro__link {
+    line-height: 29px;
+  }
+
+  .intro__link-interior::after {
+    top: 0;
+    right: -129px;
+  }
+
+  .intro__link-toy::after {
+    top: 3px;
+    right: -133px;
   }
 }
 
