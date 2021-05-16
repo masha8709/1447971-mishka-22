@@ -1,5 +1,6 @@
 .intro {
-  background-image: url("../img/intro/background-intro.jpg");
+  background-color: #f9f9f9;
+  background-image: url("../../img/intro/background-intro.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 71px;
@@ -60,7 +61,7 @@
 @media (min-width: $tablet-width) {
   .intro {
     padding: 155px 50px 0;
-    background-size: cover;
+    background-position: 50% 6px;
     position: relative;
 
     &::after {
@@ -69,13 +70,17 @@
       background-image: url("../../img/svg/zigzag-line.svg");
       bottom: -14px;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro/background-intro@2x.jpg");
+    }
   }
 
   .intro__title {
     @include fonts(43px, 50px);
     width: 100%;
     padding: 0;
-    margin-bottom: 500px;
+    margin-bottom: 387px;
   }
 
   .intro__list {
