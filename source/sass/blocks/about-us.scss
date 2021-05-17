@@ -55,9 +55,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-bottom: 29px;
+  }
+
   .about-us__title {
     @include fonts(43px, 50px);
-    margin-bottom: 99px;
+    margin-bottom: 44px;
   }
 
   .about-us__list {
@@ -66,7 +70,8 @@
   }
 
   .about-us__list .about-us__item {
-    margin-bottom: 111px;
+    margin-bottom: 55px;
+    margin-top: 55px;
   }
 
   .about-us__item {

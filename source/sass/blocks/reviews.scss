@@ -73,7 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding: 0 50px 85px;
+    padding: 76px 50px 94px;
     background-image: url("../../img/reviews/bg-rug.jpg");
     background-repeat: no-repeat;
     display: grid;
@@ -82,20 +82,24 @@
     &::after {
       background-image: url("../../img/svg/zigzag-line-17.svg");
       height: 17px;
+      bottom: 0;
     }
   }
 
   .reviews__item {
     grid-column: 1/5;
+    margin-bottom: 0;
   }
 
   .reviews__title {
     @include fonts(43px, 50px);
-    margin-bottom: 39px;
+    margin-bottom: 38px;
+    margin-top: 6px;
   }
 
   .reviews__text {
     @include fonts(17px, 30px);
+    margin-bottom: 59px;
   }
 
   .reviews__author-name {
@@ -106,13 +110,13 @@
   .reviews__button {
     grid-column: 4/5;
     grid-row: 1/2;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     width: 175px;
   }
 
   .reviews__toggles {
     grid-column: 4/5;
-    grid-row: 3/4;
+    margin-top: -50px;
   }
 
   .slider__toggle {

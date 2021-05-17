@@ -22,6 +22,7 @@
 
 .contacts-link {
   border-bottom: 1px solid $border-decor;
+  padding-bottom: 3px;
 }
 
 .contacts__write-us {
@@ -30,11 +31,22 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 68px 50px 73px;
+    padding: 70px 50px 73px;
   }
 
   .contacts__title {
     @include fonts(43px, 50px);
+    margin-bottom: 49px;
+    position: relative;
+
+    &::after {
+      @include pseudo-el;
+      background-image: url("../../img/svg/flag.svg");
+      width: 47px;
+      height: 81px;
+      right: 2px;
+      top: -24px;
+    }
   }
 
   .contacts__contact,
@@ -42,14 +54,18 @@
     @include fonts(17px, 30px);
   }
 
+  .contacts__contact {
+    padding-right: 8px;
+  }
+
   .contacts-wrp {
     display: grid;
-    grid-template-columns: 350px 318px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .contacts__item {
     width: 320px;
-    grid-template-columns: 70px 1fr;
+    grid-template-columns: 79px 1fr;
   }
 }
 
