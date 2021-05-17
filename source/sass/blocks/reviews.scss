@@ -84,6 +84,11 @@
       height: 17px;
       bottom: 0;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/reviews/bg-rug@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__item {
