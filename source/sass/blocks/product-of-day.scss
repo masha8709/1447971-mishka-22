@@ -138,7 +138,7 @@
   }
 
   .product-of-day__info {
-    grid-template-columns: 175px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 175px 175px 175px 175px 175px 175px;
     grid-template-rows: 150px 134px auto 57px 54px;
     margin-top: -130px;
   }
@@ -150,7 +150,7 @@
   }
 
   .product-of-day-wrapper {
-    grid-column: 3/7;
+    grid-column: 4/7;
     margin-top: 0;
   }
 
