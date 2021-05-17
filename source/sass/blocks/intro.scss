@@ -108,8 +108,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 164px;
+  }
+
+  .intro__title {
+    @include fonts(53px, 54px);
+    margin-bottom: 359px;
+  }
+
   .intro__link-interior::after,
   .intro__link-toy::after {
-    right: -262px;
+    right: -324px;
+  }
+
+  .intro__link-interior::after {
+    top: 3px;
   }
 }

@@ -107,10 +107,15 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
+    padding-top: 69px;
     padding-left: 225px;
   }
 
   .about-us__title {
     @include fonts(53px, 57px);
+  }
+
+  .about-us__item {
+    margin-right: 52px;
   }
 }

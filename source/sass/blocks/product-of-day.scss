@@ -42,6 +42,11 @@
   .product-of-day {
     padding-bottom: 58px;
     padding-top: 57px;
+
+    &::after {
+      background-image: url("../../img/svg/zigzag-line-17.svg");
+      height: 17px;
+    }
   }
 
   .product-of-day-headings {
@@ -95,55 +100,64 @@
     margin-top: 0;
     margin-bottom: 25px;
   }
-
-  .product-of-day::after {
-    background-image: url("../../img/svg/zigzag-line-17.svg");
-    height: 17px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .product-of-day {
-    padding-top: 54px;
-    padding-bottom: 73px;
+    padding-top: 80px;
+    padding-bottom: 91px;
+
+    &::after {
+      background-image: url("../../img/svg/zigzag-line-desktop.svg");
+      height: 23px;
+      width: 1050px;
+      left: 50px;
+      bottom: 0;
+    }
   }
 
   .product-of-day-headings {
     display: grid;
     grid-template-columns: 175px 1fr;
-    margin-top: 40px;
+    margin-top: 66px;
+    margin-bottom: 27px;
   }
 
   .product-of-day__heading {
     @include fonts(53px, 35px);
     width: 545px;
     z-index: 1;
+    margin-bottom: 0;
   }
 
   .product-of-day__title {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 32px;
+    margin-left: 19px;
+    margin-top: -6px;
   }
 
   .product-of-day__info {
     grid-template-columns: 175px 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px auto auto 57px 52px;
+    grid-template-rows: 150px 134px auto 57px 54px;
     margin-top: -130px;
   }
 
   .product-of-day__txt {
     grid-column: 2/4;
     grid-row: 2/3;
+    margin-bottom: 46px;
   }
 
   .product-of-day-wrapper {
-    grid-column: 4/7;
+    grid-column: 3/7;
+    margin-top: 0;
   }
 
   .product-of-day__price {
     grid-column: 2/4;
     grid-row: 4/5;
+    margin-right: 150px;
   }
 
   .product-of-day__buy {

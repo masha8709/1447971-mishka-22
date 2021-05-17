@@ -79,11 +79,10 @@
 
 .main-nav__link,
 .main-nav__search-link {
-  @include fonts(17px, 24px);
+  @include fonts(17px, 78px);
   color: $main-txt;
   padding: 0 30px 0 74px;
   display: block;
-  line-height: 78px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -156,21 +155,43 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 375px;
+  }
+
   .main-nav__list-more {
     order: 4;
-    width: 355px;
+    width: 329px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .main-nav__link,
+  .main-nav__search-link {
+    line-height: 70px;
+  }
+
+  .main-nav__link-catalog {
+    position: relative;
+
+    &::after {
+      @include pseudo-el;
+      width: 1px;
+      height: 88px;
+      border-right: 1px solid rgba($color: $main-txt, $alpha: 0.1);
+      right: -36px;
+      top: -9px;
+    }
+  }
+
+  .main-nav__search-icon {
+    position: absolute;
   }
 
   .main-nav__wrapper {
     flex-wrap: wrap;
     margin-top: -86px;
     justify-content: space-between;
-  }
-
-  .main-nav__list {
-    width: 400px;
   }
 
   .main-nav__search-txt {
@@ -187,6 +208,6 @@
   }
 
   .main-nav__cart-icon {
-    left: 872px;
+    left: 865px;
   }
 }
