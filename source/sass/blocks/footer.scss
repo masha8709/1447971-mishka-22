@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    padding-top: 42px;
+    padding-top: 46px;
     padding-bottom: 58px;
     min-height: 153px;
   }
@@ -54,7 +54,8 @@
   }
 
   .footer__social-list {
-    margin: 0;
+    margin: 0 0 0 40px;
+    width: 179px;
 
     &::after {
       border-bottom: none;

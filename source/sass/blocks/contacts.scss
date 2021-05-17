@@ -67,6 +67,10 @@
     width: 320px;
     grid-template-columns: 79px 1fr;
   }
+
+  .contacts__write-us {
+    width: 235px;
+  }
 }
 
 @media (min-width: $desktop-width) {
