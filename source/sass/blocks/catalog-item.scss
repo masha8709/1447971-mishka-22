@@ -18,6 +18,12 @@
 
 .catalog-item__article {
   margin-bottom: 28px;
+  height: auto;
+}
+
+.catalog-wrp-img {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .catalog-item__heading-link {
@@ -31,11 +37,11 @@
   text-align: center;
 
   &:hover {
-    color: rgba($color: #000000, $alpha: 0.6);
+    color: rgba($color: $main-txt, $alpha: 0.6);
   }
 
   &:active {
-    color: rgba($color: #000000, $alpha: 0.3);
+    color: rgba($color: $main-txt, $alpha: 0.3);
   }
 }
 
@@ -83,7 +89,7 @@
   }
 }
 
-.catalog-item__video {
+.catalog-wrp-video {
   margin-top: 24px;
   margin-bottom: 35px;
 }
@@ -110,8 +116,6 @@
 
   .catalog-item__article {
     margin-bottom: 0;
-    width: 334px;
-    height: auto;
   }
 
   .catalog-item-wrp {
@@ -143,15 +147,15 @@
     }
   }
 
-  .catalog-item__video {
+  .catalog-wrp-video {
     grid-column: 1/-1;
     margin-top: 0;
     width: 100%;
   }
 
   .catalog-item__video-play {
-    top: 185px;
-    left: 256px;
+    top: 183px;
+    left: 275px;
   }
 
   .catalog-item__description-video {
@@ -215,7 +219,7 @@
     }
   }
 
-  .catalog-item__video {
+  .catalog-wrp-video {
     margin-bottom: 0;
     width: 682px;
     grid-column: 1/2;
@@ -224,7 +228,7 @@
 
   .catalog-item__video-play {
     top: 191px;
-    left: 277px;
+    left: 287px;
   }
 
   .catalog-item__description-video {

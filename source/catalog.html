@@ -69,8 +69,17 @@
       <div class="catalog-wrapper container">
         <ul class="catalog__list">
           <li class="catalog-item">
-            <a href="#">
-              <img class="catalog-item__article" src="img/catalog/hare.jpg" alt="Вязаный заяц">
+            <a class="catalog-item__link" href="#">
+              <p class="catalog-wrp-img">
+                <picture>
+                  <source media="(min-width: 1150px)"
+                    srcset="img/catalog/hare-desktop.jpg 1x, img/catalog/hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/hare-tablet.jpg 1x, img/catalog/hare-tablet@2x.jpg 2x">
+                  <img class="catalog-item__article" src="img/catalogn/hare.jpg" srcset="img/catalog/hare-mobile@2x.jpg"
+                    alt="Вязаный заяц">
+                </picture>
+              </p>
             </a>
             <div class="catalog-item-wrp">
               <a class="catalog-item__heading-link" href="#">
@@ -84,7 +93,16 @@
           </li>
           <li class="catalog-item">
             <a href="#">
-              <img class="catalog-item__article" src="img/catalog/basket-wash.jpg" alt="Вязаная корзина для белья">
+              <p class="catalog-wrp-img">
+                <picture>
+                  <source media="(min-width: 1150px)"
+                    srcset="img/catalog/basket-wash-desktop.jpg 1x, img/catalog/basket-wash-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/basket-wash-tablet.jpg 1x, img/catalog/basket-wash-tablet@2x.jpg 2x">
+                  <img class="catalog-item__article" src="img/catalog/basket-wash.jpg"
+                    srcset="img/catalog/basket-wash-mobile@2x.jpg" alt="Вязаная корзина для белья">
+                </picture>
+              </p>
             </a>
             <div class="catalog-item-wrp">
               <a class="catalog-item__heading-link" href="#">
@@ -98,7 +116,16 @@
           </li>
           <li class="catalog-item">
             <a href="#">
-              <img class="catalog-item__article" src="img/catalog/basket-toy.jpg" alt="Вязаная корзина для игрушек">
+              <p class="catalog-wrp-img">
+                <picture>
+                  <source media="(min-width: 1150px)"
+                    srcset="img/catalog/basket-toy-desktop.jpg 1x, img/catalog/basket-toy-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/basket-toy-tablet.jpg 1x, img/catalog/basket-toy-tablet@2x.jpg 2x">
+                  <img class="catalog-item__article" src="img/catalog/basket-toy.jpg"
+                    srcset="img/catalog/basket-toy-mobile@2x.jpg" alt="Вязаная корзина для игрушек">
+                </picture>
+              </p>
             </a>
             <div class="catalog-item-wrp">
               <a class="catalog-item__heading-link" href="#">
@@ -112,7 +139,16 @@
           </li>
           <li class="catalog-item catalog-item-video">
             <h3 class="catalog-item__heading catalog-item__heading-video">Процесс производства</h3>
-            <img class="catalog-item__video" src="img/catalog/video.jpg" alt="Видео прозводства товаров">
+            <p class="catalog-wrp-video">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+                <img src="img/catalog/video.jpg" srcset="img/catalog/video-mobile@2x.jpg"
+                  alt="Видео прозводства товаров">
+              </picture>
+            </p>
             <button class="catalog-item__video-play" aria-label="Воспроизвести видео"><img src="img/svg/play.svg"
                 alt="Кнопка воспроизвести видео"></button>
             <p class="catalog-item__description catalog-item__description-video">
