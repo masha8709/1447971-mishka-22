@@ -127,6 +127,11 @@
   .slider__toggle {
     border: none;
   }
+
+  .slider__toggle-back::after,
+  .slider__toggle-next::after {
+    left: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -175,5 +180,6 @@
 
   .reviews__button {
     grid-column: 6/7;
+    margin-top: 8px;
   }
 }

@@ -32,7 +32,7 @@
 
 .product-of-day__price {
   @include fonts(17px, 24px);
-  margin-top: 26px;
+  margin-top: 23px;
   margin-bottom: 24px;
   font-weight: bold;
   text-align: center;
@@ -120,7 +120,7 @@
     display: grid;
     grid-template-columns: 175px 1fr;
     margin-top: 66px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
 
   .product-of-day__heading {
@@ -157,7 +157,7 @@
   .product-of-day__price {
     grid-column: 2/4;
     grid-row: 4/5;
-    margin-right: 150px;
+    margin-right: 64px;
   }
 
   .product-of-day__buy {

@@ -14,6 +14,10 @@
   grid-template-columns: 77px 1fr;
 }
 
+.contacts-wrp {
+  margin-bottom: 62px;
+}
+
 .contacts__contact,
 .contacts-link {
   @include fonts(14px, 30px);
@@ -28,28 +32,9 @@
 
 .contacts__map-zone {
   width: 100%;
-  height: 450px;
-}
-
-.contacts__map iframe {
-  width: 100%;
-  border: none;
   height: 457px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
-
-// .contacts__map {
-//   position: relative;
-
-//   &::after {
-//     @include pseudo-el;
-//     width: 67px;
-//     height: 100px;
-//     left: 45%;
-//     bottom: 45%;
-//     background-image: url("../../img/svg/map-marker.svg");
-//   }
-// }
 
 .contacts__write-us {
   margin: 0 auto;
@@ -58,7 +43,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 70px;
-    padding-bottom: 73px;
+    padding-bottom: 59px;
   }
 
   .contacts__title {
@@ -71,7 +56,7 @@
       background-image: url("../../img/svg/flag.svg");
       width: 47px;
       height: 81px;
-      right: 50px;
+      right: 53px;
       top: -24px;
     }
   }
@@ -88,6 +73,7 @@
   .contacts-wrp {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 17px;
   }
 
   .contacts__item {
@@ -95,14 +81,20 @@
     grid-template-columns: 79px 1fr;
   }
 
+  .contacts__map-zone {
+    margin-bottom: 57px;
+  }
+
   .contacts__write-us {
     width: 235px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 71px 50px 105px;
+    padding: 71px 50px 108px;
     display: grid;
     grid-template-columns: 175px 175px 175px 175px 175px 175px;
     grid-template-rows: 169px 175px 61px 50px;
@@ -126,6 +118,7 @@
     display: block;
     grid-column: 2/4;
     padding: 0;
+    margin-top: 4px;
   }
 
   .contacts__map {
@@ -133,7 +126,7 @@
     grid-row: 1/-1;
   }
 
-  .contacts__map iframe {
+  .contacts__map-zone {
     width: 527px;
   }
 
@@ -141,7 +134,10 @@
     grid-column: 2/4;
     grid-row: 4/5;
     margin: 0;
-    padding-left: 0;
+    padding-left: 6px;
     padding-right: 0;
+    width: 230px;
+    margin-top: 3px;
+    min-height: 51px;
   }
 }

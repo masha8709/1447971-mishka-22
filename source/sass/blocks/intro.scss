@@ -3,6 +3,7 @@
   background-image: url("../../img/intro/background-intro.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: 0 -20px;
   padding-top: 71px;
 }
 
@@ -46,8 +47,8 @@
   width: 40px;
   height: 62px;
   background-image: url("../../img/svg/interior.svg");
-  top: -5px;
-  right: -122px;
+  top: -3px;
+  right: -124px;
 }
 
 .intro__link-toy::after {
@@ -61,7 +62,7 @@
 @media (min-width: $tablet-width) {
   .intro {
     padding: 155px 50px 0;
-    background-position: 50% 6px;
+    background-position: 50% 2px;
     position: relative;
 
     &::after {
@@ -97,8 +98,8 @@
   }
 
   .intro__link-interior::after {
-    top: 0;
-    right: -129px;
+    top: 3px;
+    right: -130px;
   }
 
   .intro__link-toy::after {
