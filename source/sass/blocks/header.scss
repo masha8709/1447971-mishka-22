@@ -12,6 +12,10 @@
 @media (min-width: $tablet-width) {
   .header {
     padding: 35px 50px 20px;
+    height: 80px;
+    overflow: visible;
+    z-index: 2;
+    position: relative;
   }
 
   .header__logo {
