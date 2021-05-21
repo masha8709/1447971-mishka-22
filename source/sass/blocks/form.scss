@@ -186,6 +186,9 @@
   margin-bottom: 35px;
   margin-top: 16px;
   background-color: transparent;
+  background-image: url("../../img/svg/tel.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -5px;
 }
 
 .form__mail {
@@ -193,13 +196,9 @@
   margin-top: 21px;
   background-color: transparent;
   position: relative;
-
-  &::after {
-    @include pseudo-el;
-    @include pos-pseudo-el(32px, 21px, 1px);
-    bottom: 1px;
-    background-image: url("../../img/svg/mail.svg");
-  }
+  background-image: url("../../img/svg/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 0;
 }
 
 .add {
@@ -226,8 +225,8 @@
   .form__title {
     @include fonts(43px, 50px);
     padding-top: 100px;
-    min-height: 214px;
-    margin-bottom: 54px;
+    min-height: 224px;
+    margin-bottom: 69px;
     position: relative;
 
     &::after {
@@ -240,7 +239,7 @@
 
   .form__txt {
     @include fonts(17px, 30px);
-    margin-bottom: 63px;
+    margin-bottom: 80px;
   }
 
   .form__list {
@@ -248,7 +247,8 @@
   }
 
   .form__group-type {
-    margin-bottom: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .form__item-choice {
@@ -256,11 +256,23 @@
   }
 
   .form__list-choice {
-    padding-left: 40px;
+    padding-left: 80px;
   }
 
   .form__heading::after {
     display: none;
+  }
+
+  .form__radio + label::before {
+    width: 52px;
+    height: 52px;
+    left: -78px;
+    top: -18px;
+  }
+
+  .form__radio:checked + label::after {
+    left: -61px;
+    top: 0;
   }
 
   .form__group-wrapper {
@@ -269,17 +281,13 @@
     grid-template-columns: 167px 1fr;
   }
 
-  .form__heading-type {
-    margin-right: 103px;
-  }
-
   .form__group-color,
   .form__group-contacts {
     background-color: $back-for-footer;
   }
 
   .form__group-wrapper-color {
-    padding-top: 50px;
+    padding-top: 65px;
   }
 
   .form__heading-color {
@@ -298,11 +306,16 @@
   }
 
   .form__group-name {
-    padding-top: 66px;
+    padding-top: 69px;
+  }
+
+  .form__full-name {
+    margin-top: 2px;
   }
 
   .form__group-tel {
     padding-top: 64px;
+    padding-bottom: 17px;
   }
 
   .form__group-mail {
@@ -312,6 +325,7 @@
   .form__tel,
   .form__mail {
     margin-top: 0;
+    padding-left: 20px;
   }
 
   .form__tel {
@@ -322,25 +336,31 @@
     padding-top: 50px;
   }
 
+  .form__heading-add {
+    margin-top: 18px;
+  }
+
   .form__writing {
     margin-top: 0;
   }
 
   .form-wrp-btn {
     display: grid;
-    grid-template-columns: 328px 350px;
-    margin-top: 53px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 33px;
   }
 
   .form__obligatory {
     grid-column: 2/3;
     margin-top: 20px;
     margin-bottom: 0;
+    margin-left: 37px;
   }
 
   .form__send {
-    padding-left: 25px;
-    padding-right: 25px;
+    width: 232px;
+    padding-left: 0;
+    padding-right: 0;
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -349,10 +369,17 @@
 @media (min-width: $desktop-width) {
   .form__title {
     @include fonts(53px, 57px);
+    min-height: 241px;
+    margin-bottom: 130px;
+
+    &::after {
+      background-image: url("../../img/svg/zigzag-line-desktop.svg");
+      height: 23px;
+    }
   }
 
   .form__txt {
-    width: 790px;
+    width: 801px;
   }
 
   .form-wrp-btn {
