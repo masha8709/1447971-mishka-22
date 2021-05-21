@@ -51,13 +51,17 @@
         <div class="main-nav-wrp">
           <div class="main-nav__search">
             <a href="#" class="main-nav__search-link main-nav__search-txt">
-              <img class="main-nav__search-icon" src="img/svg/search.svg" alt="Иконка поиска">
+              <svg class="main-nav__search-svg" width="18" height="18" aria-label="Иконка поиска">
+                <use xlink:href="sprite.svg#search-svg"></use>
+              </svg>
               Поиск по сайту
             </a>
           </div>
           <div class="main-nav__cart">
             <a href="#" class="main-nav__search-link">
-              <img class="main-nav__cart-icon" src="img/svg/cart.svg" alt="Ссылка на корзину">
+              <svg class="main-nav__cart-svg" width="21" height="18" aria-label="Ссылка на корзину">
+                <use xlink:href="sprite.svg#cart-svg"></use>
+              </svg>
               Корзина: пока пуста
             </a>
           </div>
@@ -103,9 +107,12 @@
         </table>
         <p class="product-of-day-wrapper">
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/product_of_the_day/triple-set-desktop.jpg 1x, img/product_of_the_day/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/product_of_the_day/triple-set-tablet.jpg 1x, img/product_of_the_day/triple-set-tablet@2x.jpg 2x">
-            <img src="img/product_of_the_day/triple-set-mobile.jpg" srcset="img/product_of_the_day/triple-set-mobile@2x.jpg 2x" alt="Три вязаных корзинки">
+            <source media="(min-width: 1150px)"
+              srcset="img/product_of_the_day/triple-set-desktop.jpg 1x, img/product_of_the_day/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/product_of_the_day/triple-set-tablet.jpg 1x, img/product_of_the_day/triple-set-tablet@2x.jpg 2x">
+            <img src="img/product_of_the_day/triple-set-mobile.jpg"
+              srcset="img/product_of_the_day/triple-set-mobile@2x.jpg 2x" alt="Три вязаных корзинки">
           </picture>
         </p>
         <p class="product-of-day__price">Цена: 990 руб.</p>
@@ -153,10 +160,18 @@
         </div>
       </blockquote>
       <div class="reviews__toggles">
-        <button class="slider__toggle slider__toggle-back" type="button"> <span
-            class="visually-hidden">Назад</span></button>
-        <button class="slider__toggle slider__toggle-next" type="button"> <span
-            class="visually-hidden">Вперёд</span></button>
+        <button class="reviews__toggle" type="button">
+          <span class="visually-hidden">Назад</span>
+          <svg class="reviews__toggle-svg" width="50" height="26" aria-label="Кнопка назад">
+            <use xlink:href="sprite.svg#button-back"></use>
+          </svg>
+        </button>
+        <button class="reviews__toggle" type="button">
+          <span class="visually-hidden">Вперёд</span>
+          <svg class="reviews__toggle-svg" width="50" height="26" aria-label="Кнопка вперёд">
+            <use xlink:href="sprite.svg#button-next"></use>
+          </svg>
+        </button>
       </div>
       <button class="reviews__button button">Написать</button>
     </section>
@@ -178,7 +193,7 @@
         <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5979632818994!2d30.32282118897129!3d59.93881311509073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1621275749431!5m2!1sru!2sru"
           width="320" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe> -->
-          <div class="contacts__map-zone" id="map"></div>
+        <div class="contacts__map-zone" id="map"></div>
       </div>
       <a class="contacts__write-us button container">Напишите нам</a>
     </section>
@@ -245,8 +260,9 @@
 
   <script src="./js/script.js"></script>
   <script src="js/marker.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRqvS3NV-rjMuD_z4O17hhPBmVyGnxXHk&callback=initMap&libraries=&v=weekly"
-      async></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRqvS3NV-rjMuD_z4O17hhPBmVyGnxXHk&callback=initMap&libraries=&v=weekly"
+    async></script>
 </body>
 
 </html>
