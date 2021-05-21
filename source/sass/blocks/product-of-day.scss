@@ -91,6 +91,15 @@
     width: 292px;
     padding-top: 12px;
     padding-bottom: 10px;
+
+    &:hover {
+      background-color: $top-color;
+      color: $background;
+    }
+
+    &:active {
+      color: rgba($color: $background, $alpha: 0.3);
+    }
   }
 
   .product-of-day__price {

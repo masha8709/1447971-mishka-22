@@ -28,6 +28,16 @@
 .contacts-link {
   border-bottom: 1px solid $border-decor;
   padding-bottom: 3px;
+
+  &:hover {
+    color: #46c1ae;
+    border-color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    border-color: rgba($color: #46c1ae, $alpha: 0.1);
+  }
 }
 
 .contacts__map-zone {

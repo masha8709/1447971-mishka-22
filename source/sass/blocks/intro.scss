@@ -31,6 +31,10 @@
   }
 }
 
+.intro__item:hover {
+  transform: scaleY(1.2);
+}
+
 .intro__link {
   color: $background;
   display: block;

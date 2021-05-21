@@ -88,6 +88,16 @@
   border-bottom: 1px solid #ececec;
 }
 
+.main-nav__link:hover,
+.main-nav__search-link:hover {
+  color: rgba($color: $main-txt, $alpha: 0.6);
+}
+
+.main-nav__link:active,
+.main-nav__search-link:active {
+  color: rgba($color: $main-txt, $alpha: 0.3);
+}
+
 .main-nav__search-svg,
 .main-nav__cart-svg {
   position: absolute;
