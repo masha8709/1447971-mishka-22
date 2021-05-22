@@ -68,21 +68,6 @@
   }
 }
 
-// .slider__toggle-back::after,
-// .slider__toggle-next::after {
-//   @include pseudo-el;
-//   @include pos-pseudo-el(50px, 26px, 35px);
-//   top: 14px;
-// }
-
-// .slider__toggle-back::after {
-//   background-image: url("../../img/svg/slider-back.svg");
-// }
-
-// .slider__toggle-next::after {
-//   background-image: url("../../img/svg/slider-next.svg");
-// }
-
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 76px 50px 94px;
@@ -129,6 +114,15 @@
     grid-row: 1/2;
     margin-bottom: 40px;
     width: 175px;
+
+    &:hover {
+      background-color: $top-color;
+      color: $background;
+    }
+
+    &:active {
+      color: rgba($color: $background, $alpha: 0.3);
+    }
   }
 
   .reviews__toggles {

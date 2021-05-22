@@ -25,6 +25,7 @@
   padding-top: 24px;
   padding-bottom: 31px;
   background-color: $back-decor;
+  cursor: pointer;
 
   &:first-child {
     background-color: $main-decor;
@@ -36,7 +37,6 @@
   display: block;
   width: 130px;
   position: relative;
-  cursor: pointer;
 
   &::after {
     @include pseudo-el;
@@ -67,7 +67,7 @@
 
     &::after {
       @include pseudo-el;
-      @include pos-pseudo-el(100%, 24px, 0);
+      @include pos-pseudo-el(100%, 28px, 0);
       background-image: url("../../img/svg/zigzag-line.svg");
       bottom: -14px;
     }
@@ -93,7 +93,7 @@
     padding-left: 36px;
 
     &:hover {
-      transform: scaleY(1.2);
+      transform: translateY(-5px);
     }
   }
 

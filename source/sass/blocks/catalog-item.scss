@@ -173,6 +173,15 @@
     width: 584px;
     margin-left: 41px;
     margin-bottom: 46px;
+
+    &:hover {
+      background-color: $top-color;
+      color: $background;
+    }
+
+    &:active {
+      color: rgba($color: $background, $alpha: 0.3);
+    }
   }
 }
 
