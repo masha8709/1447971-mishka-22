@@ -31,10 +31,6 @@
   }
 }
 
-.intro__item:hover {
-  transform: scaleY(1.2);
-}
-
 .intro__link {
   color: $background;
   display: block;
@@ -95,6 +91,10 @@
   .intro__item {
     padding-top: 26px;
     padding-left: 36px;
+
+    &:hover {
+      transform: scaleY(1.2);
+    }
   }
 
   .intro__link {
