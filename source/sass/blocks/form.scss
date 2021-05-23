@@ -223,6 +223,7 @@
 
 .form__mail-svg {
   position: absolute;
+  opacity: 0.2;
   fill: $main-txt;
   top: 35%;
   right: 10%;
@@ -263,6 +264,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    padding-top: 0;
+    padding-bottom: 53px;
+  }
+
   .form__title {
     @include fonts(43px, 50px);
     padding-top: 100px;
@@ -329,6 +335,8 @@
 
   .form__group-wrapper-color {
     padding-top: 65px;
+    padding-right: 0;
+    padding-bottom: 6px;
   }
 
   .form__heading-color {
@@ -336,19 +344,24 @@
   }
 
   .form__list-color {
-    padding-left: 40px;
+    padding-left: 0;
+    margin-left: 82px;
     display: flex;
     flex-wrap: wrap;
+    column-gap: 53px;
   }
 
   .form__list-color .form__item {
-    margin-bottom: 60px;
-    width: 230px;
+    margin-bottom: 58px;
+    width: 208px;
+    padding-left: 0;
   }
 
   .form__color + label::before {
     width: 52px;
     height: 52px;
+    left: -81px;
+    bottom: -15px;
   }
 
   .form__color:checked + label::after {
@@ -356,19 +369,40 @@
     height: 30px;
     background-image: url("../../img/svg/tick-tablet.svg");
     background-repeat: no-repeat;
+    bottom: -10px;
+    left: -71px;
   }
 
   .form__group-name {
     padding-top: 69px;
+    margin-bottom: 8px;
   }
 
   .form__full-name {
     margin-top: 2px;
   }
 
+  .form__item-name {
+    display: flex;
+    margin-bottom: 41px;
+  }
+
+  .form__item-name .form__data {
+    margin-top: -4px;
+  }
+
+  .form__data-name {
+    margin-right: 42px;
+  }
+
   .form__group-tel {
-    padding-top: 60px;
+    padding-top: 67px;
     padding-bottom: 17px;
+  }
+
+  .form__tel-svg {
+    top: 44%;
+    right: 10%;
   }
 
   .form__group-mail {
@@ -385,8 +419,15 @@
     margin-bottom: 24px;
   }
 
-  .form__tel::placeholder {
-    font-size: 18px;
+  .form__tel::placeholder,
+  .form__mail::placeholder,
+  .form__writing::placeholder {
+    font-size: 19px;
+  }
+
+  .form__mail-svg {
+    top: 0;
+    right: 71px;
   }
 
   .form__group-add {
@@ -399,22 +440,26 @@
 
   .form__writing {
     margin-top: 0;
+    margin-bottom: 55px;
+    padding: 14px;
   }
 
   .form-wrp-btn {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 33px;
+    margin-top: 0;
   }
 
   .form__obligatory {
     grid-column: 2/3;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 0;
-    margin-left: 37px;
+    margin-left: 32px;
+    font-size: 17px;
   }
 
   .form__send {
+    font-size: 17px;
     width: 232px;
     padding-left: 0;
     padding-right: 0;
@@ -435,13 +480,43 @@
 @media (min-width: $desktop-width) {
   .form__title {
     @include fonts(53px, 57px);
-    min-height: 241px;
-    margin-bottom: 130px;
+    min-height: 252px;
+    margin-bottom: 118px;
 
     &::after {
-      background-image: url("../../img/svg/zigzag-line-desktop.svg");
+      background-image: url("../../img/svg/zigzag-fill-desktop.svg");
       height: 23px;
+      bottom: -9px;
     }
+  }
+
+  .form__group-wrapper {
+    grid-template-columns: 175px 1fr 175px;
+  }
+
+  .form__group-wrapper-color {
+    grid-template-columns: 175px 1fr;
+  }
+
+  .form__list-choice {
+    padding-left: 78px;
+  }
+
+  .form__tel-svg {
+    top: 44%;
+    right: 20%;
+  }
+
+  .form__mail-svg {
+    right: 230px;
+  }
+
+  .form__heading {
+    margin-left: 61px;
+  }
+
+  .form__writing {
+    margin-bottom: 51px;
   }
 
   .form__txt {
