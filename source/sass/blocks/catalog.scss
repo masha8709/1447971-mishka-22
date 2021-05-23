@@ -8,7 +8,7 @@
   text-align: center;
   background-color: $back-for-footer;
   min-height: 177px;
-  padding-top: 74px;
+  padding-top: 72px;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -19,13 +19,13 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding-bottom: 0;
+    padding-bottom: 66px;
   }
 
   .catalog__title {
     @include fonts(43px, 50px);
-    min-height: 216px;
-    margin-bottom: 67px;
+    min-height: 225px;
+    margin-bottom: 81px;
     padding-top: 100px;
     position: relative;
 
@@ -33,7 +33,31 @@
       @include pseudo-el;
       @include pos-pseudo-el(100%, 24px, 0);
       background-image: url("../../img/svg/zigzag-line.svg");
-      bottom: -14px;
+      bottom: -13px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-bottom: 52px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .catalog__title {
+    font-size: 53px;
+    padding-top: 105px;
+    min-height: 251px;
+    margin-bottom: 132px;
+  }
+
+  &::after {
+    background-image: url("../../img/svg/zigzag-line-desktop.svg");
   }
 }
