@@ -180,25 +180,52 @@
   padding-right: 0;
   padding-bottom: 15px;
   margin-top: 16px;
+
+  &:focus {
+    border-bottom: 2px solid transparent;
+    outline: 2px solid $border-decor;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $border-decor;
+  }
+
+  &:active {
+    border-bottom: 2px solid transparent;
+    outline: 2px solid $border-decor;
+  }
 }
 
 .form__tel {
   margin-bottom: 35px;
   margin-top: 16px;
   background-color: transparent;
-  background-image: url("../../img/svg/tel.svg");
-  background-repeat: no-repeat;
-  background-position: 95% -5px;
+}
+
+.form__group-tel,
+.form__group-mail {
+  position: relative;
+}
+
+.form__tel-svg {
+  position: absolute;
+  fill: $main-txt;
+  opacity: 0.2;
+  top: 27%;
+  right: 12%;
 }
 
 .form__mail {
   margin-bottom: 35px;
   margin-top: 21px;
   background-color: transparent;
-  position: relative;
-  background-image: url("../../img/svg/mail.svg");
-  background-repeat: no-repeat;
-  background-position: 95% 0;
+}
+
+.form__mail-svg {
+  position: absolute;
+  fill: $main-txt;
+  top: 35%;
+  right: 10%;
 }
 
 .add {
@@ -211,6 +238,20 @@
   padding: 15px;
   resize: none;
   border: 2px solid $main-txt;
+
+  &:focus {
+    border: 2px solid $border-decor;
+    outline: none;
+  }
+
+  &:hover {
+    border: 2px solid $border-decor;
+  }
+
+  &:active {
+    border: 2px solid $border-decor;
+    outline: none;
+  }
 }
 
 .form__obligatory {
