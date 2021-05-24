@@ -80,7 +80,7 @@
   border-radius: 50%;
 }
 
-.form__radio:hover+label::before {
+.form__radio:hover + label::before {
   border-color: $border-decor;
 }
 
