@@ -91,6 +91,7 @@
   .intro__item {
     padding-top: 26px;
     padding-left: 36px;
+    font-size: 20px;
 
     &:hover {
       transform: translateY(-5px);
@@ -123,7 +124,7 @@
 
   .intro__title {
     @include fonts(53px, 54px);
-    margin-bottom: 359px;
+    margin-bottom: 357px;
   }
 
   .intro__link-interior::after,

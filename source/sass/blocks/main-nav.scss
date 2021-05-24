@@ -169,14 +169,14 @@
 
   .main-nav__list {
     display: flex;
-    width: 340px;
+    width: 305px;
     justify-content: space-between;
   }
 
   .main-nav-wrp {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 363px;
     margin-top: -76px;
   }
 
@@ -184,6 +184,10 @@
   .main-nav__search-link {
     border-bottom: none;
     padding: 0;
+  }
+
+  .main-nav__link {
+    font-size: 15px;
   }
 
   .main-nav__search-svg {
@@ -218,7 +222,7 @@
 
   .main-nav__list-more {
     order: 4;
-    width: 329px;
+    width: 316px;
     display: flex;
     justify-content: space-between;
   }
@@ -226,6 +230,14 @@
   .main-nav__link,
   .main-nav__search-link {
     line-height: 70px;
+  }
+
+  .main-nav__link {
+    font-size: 17px;
+  }
+
+  .main-nav__link-more {
+    font-size: 15px;
   }
 
   .main-nav__link-catalog {

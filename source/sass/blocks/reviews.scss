@@ -1,5 +1,5 @@
 .reviews {
-  padding: 11px 30px 45px;
+  padding: 9px 30px 45px;
   position: relative;
 
   &::after {
@@ -31,13 +31,15 @@
 }
 
 .reviews__author-name {
+  font-size: 17px;
   font-style: normal;
 }
 
 .reviews__insta {
+  font-size: 17px;
   font-weight: normal;
   display: block;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .reviews__toggles {
@@ -110,6 +112,7 @@
   }
 
   .reviews__button {
+    font-size: 17px;
     grid-column: 4/5;
     grid-row: 1/2;
     margin-bottom: 40px;
@@ -168,7 +171,11 @@
   }
 
   .reviews__text {
-    margin-bottom: 42px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__author-name {
+    font-size: 17px;
   }
 
   .reviews__insta {
