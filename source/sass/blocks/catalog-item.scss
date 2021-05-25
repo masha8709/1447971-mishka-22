@@ -1,5 +1,5 @@
 .catalog-item {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   position: relative;
   border: 1px solid #ececec;
 
@@ -61,6 +61,7 @@
 .catalog-item__description-video {
   margin-left: 34px;
   width: 255px;
+  margin-bottom: 41px;
 }
 
 .catalog-item__price {
@@ -96,7 +97,7 @@
   width: 156px;
   text-align: left;
   margin-left: 91px;
-  margin-top: 18px;
+  margin-top: 24px;
   position: relative;
 
   &::before {
@@ -211,10 +212,11 @@
     width: 300px;
     margin-left: 107px;
     margin-bottom: 25px;
+    margin-top: 17px;
 
     &::before {
       top: -3px;
-      left: -62px;
+      left: -65px;
     }
   }
 
@@ -241,6 +243,7 @@
   }
 
   .catalog-item__buy-button {
+    font-size: 17px;
     grid-column: 1/-1;
     grid-row: 4/5;
     width: 584px;
