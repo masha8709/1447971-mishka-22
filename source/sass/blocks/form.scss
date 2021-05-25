@@ -250,7 +250,7 @@
 .form__writing {
   margin-top: 23px;
   margin-bottom: 17px;
-  padding: 15px;
+  padding: 15px 15px 13px;
   resize: none;
   border: 2px solid $main-txt;
 
@@ -269,12 +269,20 @@
   }
 }
 
+.form__writing::placeholder {
+  font-size: 17px;
+}
+
 .form__obligatory {
   @include fonts(14px, 16px);
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-weight: normal;
   color: $top-color;
+}
+
+.form__send {
+  font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {
