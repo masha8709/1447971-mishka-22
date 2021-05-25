@@ -1,14 +1,16 @@
 .buy-form {
   display: none;
   padding: 29px 30px 46px;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .buy-form__title {
   text-transform: uppercase;
   margin-bottom: 14px;
   text-align: center;
+  width: 163px;
+  margin-left: 50px;
 }
 
 .buy-form__size {
@@ -21,7 +23,7 @@
 .buy-form__list {
   @include reset-list;
   margin-top: 22px;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
   display: flex;
   justify-content: space-between;
 }
@@ -30,9 +32,21 @@
   @include fonts(17px, 16px);
   width: 82px;
   color: $top-color;
-  border: 2px solid $back-for-footer;
+  border: 2px solid rgba($color: $top-color, $alpha: 0.1);
   text-align: center;
-  padding: 18px 22px;
+  padding: 16px 22px;
+
+  &:hover {
+    border-color: rgba($color: $top-color, $alpha: 0.3);
+  }
+
+  &:active {
+    border-color: $border-decor;
+  }
+}
+
+.buy-form__item-aktive {
+  border: 2px solid $border-decor;
 }
 
 .buy-form__add-to-cart {
@@ -45,11 +59,33 @@
   .buy-form {
     width: 566px;
     margin: 0 auto;
-    padding: 38px 108px 46px;
+    padding: 52px 50px 46px;
     box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  }
+
+  .buy-form__title {
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .buy-form__size {
+    font-size: 17px;
+  }
+
+  .buy-form__list {
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
+  .buy-form__item {
+    width: 111px;
   }
 
   .buy-form__add-to-cart {
     margin: 0 auto;
+    font-size: 17px;
+    width: 348px;
   }
 }
