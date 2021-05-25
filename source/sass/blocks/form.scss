@@ -80,6 +80,10 @@
   border-radius: 50%;
 }
 
+.form__radio:focus + label::before {
+  border-color: $border-decor;
+}
+
 .form__radio:hover + label::before {
   border-color: $border-decor;
 }
@@ -133,6 +137,10 @@
   border: 2px solid $top-color;
 }
 
+.form__color:focus + label::before {
+  border-color: $border-decor;
+}
+
 .form__color:hover + label::before {
   border-color: $border-decor;
 }
@@ -181,19 +189,25 @@
   padding-bottom: 15px;
   margin-top: 16px;
 
+  &:hover {
+    border-bottom: 2px solid $border-decor;
+  }
+
   &:focus {
     border-bottom: 2px solid transparent;
     outline: 2px solid $border-decor;
-  }
-
-  &:hover {
-    border-bottom: 2px solid $border-decor;
   }
 
   &:active {
     border-bottom: 2px solid transparent;
     outline: 2px solid $border-decor;
   }
+}
+
+.form__tel:hover + .form__tel-svg,
+.form__mail:hover + .form__mail-svg {
+  fill: $border-decor;
+  opacity: 1;
 }
 
 .form__tel {
